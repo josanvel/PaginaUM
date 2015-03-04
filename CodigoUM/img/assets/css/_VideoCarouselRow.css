@@ -1,0 +1,261 @@
+
+/*
+//====================================================================
+//
+// MOBILE / SMALL SCREEN (0px - 480px)
+//
+//====================================================================
+*/
+.video-carousel-item .item-gallery {
+	position: relative;
+	}	
+	
+	.video-carousel-item .item-gallery-position {
+		overflow: hidden;
+		margin: 50px auto 38px;
+		width: 280px;
+		position: relative;
+		z-index: 1000;
+		/*background: yellow;
+*/		}
+
+	
+	.video-carousel-item .item-gallery-wrap {
+		display: inline-block;
+		margin: 0 auto;
+		float: left;
+		width: 280px;
+		min-height: 100%;
+		overflow: hidden;
+		/*background: red;*/
+		}
+
+	.video-carousel-item .video-item {
+		position: relative;
+		float: left;
+		display: inline;
+		width: 280px;
+		margin: 0; 
+		}
+		
+		.video-carousel-item .pagination {
+			display: none;
+			}
+
+		.video-carousel-item .item-gallery .pagination a {
+			float: left;
+			}
+			
+			.video-carousel-item .item-gallery .pagination.next a {
+				float: right;
+				}
+
+
+	.video-controls {
+		clear: both;
+		display: block;
+		float: left;
+		width:  100%;
+		margin: 12px auto 0;
+		}
+	
+		.video-view-all,
+		.video-name {
+			text-align: center;
+			margin: 0 0 12px 0;
+			}
+
+			.video-view-all {
+				
+				}
+
+			.video-name {
+				font-weight: 700;
+				}					
+
+
+.video-view-all { z-index: 10; }
+.video-carousel-item .item-gallery-slider { height: 211px; }
+/*
+//====================================================================
+//
+// TABLET (Bigger than 767px )
+//
+//====================================================================
+*/
+			
+@media only screen and (min-width: 767px) { 
+.video-carousel-item .item-gallery-position {
+	width: 578px; 
+	margin: 100px auto 62px;
+	}
+	
+	.video-carousel-item .item-gallery-wrap,
+	.video-controls {
+		width: 476px;
+		/*min-height: 263px;*/
+		margin: 0;
+		position: relative;
+		overflow: hidden;
+		}
+		
+.video-controls {
+	clear: both; 
+	min-height: 50px; 
+	margin: 5px 0 0 0;
+	}		
+		
+.video-controls .video-name {
+	width: 50%;
+	position: absolute;
+	top: .6em;
+	left: 0;
+	text-align: left;
+	}	
+		
+.video-controls .video-position-wrap {
+	width: 100%;
+	position: absolute;
+	left: 0;
+	top: 50px;
+	}	
+		
+	.video-view-all {
+		text-align: right;
+		margin: 0;
+		position: absolute;
+		right: 0;
+		bottom: 9px;
+		}
+
+		
+.video-carousel-item .video-item {
+	width: 476px;
+	}
+	
+.video-carousel-item .pagination {
+	display: inline;
+	margin-top: 100px;
+	}
+	
+	.pagination {
+		height: 49px;
+		width: 51px;
+		float: right;
+		display: inline;
+		}
+		
+		.pagination.previous {
+			float: left;
+			}
+	
+	.pagination a {
+		width: 20px;
+		height: 49px;
+		float: right;
+		}
+		
+		.pagination.previous a {
+			/* display: block !important; */
+			float: left;
+			}
+			
+	.video-carousel-item .item-gallery-slider { height: 330px; }
+
+}
+
+/*
+//====================================================================
+//
+// DEFAULT (Bigger than 979px )
+//
+//====================================================================
+*/
+@media only screen and (min-width: 979px) { 
+.video-carousel-item .item-gallery-position {
+	width: 722px; 
+	}
+
+	.video-carousel-item .item-gallery-wrap,
+	.video-controls {
+		width: 620px;
+		min-height: 50px;
+		/*margin: 0 auto;*/
+		}
+
+.video-position-wrap {
+	width: 620px;
+	}		
+
+	/*.video-controls {
+		margin: 0;
+		}*/
+
+.video-carousel-item .video-item {
+	width: 620px;
+	}
+
+.video-carousel-item .pagination {
+	margin-top: 135px;
+	}
+	
+	.video-carousel-item .item-gallery-slider { height: 406px; }
+	
+
+}
+
+/*
+//====================================================================
+//
+// LARGE SCREEN ( Bigger than 1199px )
+//
+//====================================================================
+*/
+@media only screen and (min-width: 1199px) { 
+.video-carousel-item .item-gallery-position {
+	width: 872px; 
+	}
+
+	.video-carousel-item .item-gallery-wrap,
+	.video-controls {
+		width: 770px;
+		/*min-height: 424px;*/
+		}
+
+.video-position-wrap {
+	width: 770px;
+	}		
+
+	/*.video-controls {
+		margin: 0;
+		}*/
+
+.video-carousel-item .video-item {
+	width: 770px;
+	}
+
+.video-carousel-item .pagination {
+	margin-top: 190px;
+	}	
+	
+	.video-carousel-item .item-gallery-slider { height: 487px; }
+
+
+}
+
+
+
+/*Coxy*/
+@media only screen and (max-width: 767px) {
+	.caroufredsel_wrapper {
+		height: 190px !important;
+	}
+	
+	.paging-position-wrap {
+		min-height: 28px;
+	}
+	
+	/*.video-view-all {
+		margin-bottom: 20px;
+	}*/
+}

@@ -1,0 +1,135 @@
+
+.mashup-header { 
+	position:fixed;  
+	bottom:0px;  
+	margin:0; 
+	z-index:9999; 
+	width:100%; 
+}
+
+	.mashup-grid { 
+		position:absolute; 
+		background-color:#D7D7D7; 
+		z-index:5; 
+		width:100%; /*top: 40px !important; padding-top: 10px; */				
+	}
+
+	.mashup-filters {
+		z-index:1000;
+	}
+	
+.mashup-header.store-header.is-sub {
+	/* FYI: Shares sub nav styling/positioning with store header in store.css around line 537 */
+	background: #fff url(/assets/images/header-nav-bar-grey-1.gif) 0 40px repeat-x;
+	}
+
+	.mashup-header.is-sub .header-strip {
+		height: 80px;
+		}
+
+
+.mashup-header.store-header.is-sub.is-inactive {
+	height: 40px;
+	
+	}
+    .mashup-header.store-header.is-sub.is-inactive .mashup-header-wrap .mashup-filters {
+        display: none;
+    }
+
+.mashup-header.store-header.is-sub.is-active {
+	height: 80px;
+	}
+.mashup-header.store-header.is-sub.is-active .mashup-header-wrap .mashup-filters {
+        display: inherit;
+    }
+
+
+
+.ajax-loading {
+	text-align:center;
+	padding:1em;
+}
+
+.ajax-spinner {
+	width:100%;
+	height:50px;
+}
+
+
+@media only screen and (max-width:767px) {
+
+
+.store-header-wrap.mashup-header-wrap {
+	height: 80px;	
+	}	
+
+	.mashup-header .nav.is-sub-nav {
+		position: absolute;
+		right: auto;
+		left: 7px;
+		top: 45px;
+		bottom: auto;
+		}
+}
+
+@media only screen and (min-width:767px) {
+
+.mobile-current-tab {
+    display: none !important;
+    background-color: #ff0000 !important;
+}
+	.mashup-header.is-sub .header-strip {
+		height: auto;
+		}
+
+}
+	.mashup-header .nav .mashup-close { 
+		visibility:hidden; 
+		float:left; 
+	}
+	
+	.mashup-header .nav .mashup-close img { 
+		vertical-align:middle; 
+		margin-bottom:2px; 
+	}
+
+	.mashup-grid .module-grid-row-wrap { 
+		margin-top: 100px;
+	}	
+	
+	.touch .mashup-grid .module-grid-row-wrap { 
+		margin-top: 0; 
+		padding-top: 10px; 
+	}	
+
+	.mashup-header .nav .mashup-title img {
+		margin: 7px 4px 0 0;
+	}
+
+@media only screen and (min-width:767px) {
+
+	.mashup-header .nav .mashup-title img {
+		margin: 12px 4px 0 0;
+	}
+
+	}
+
+@media only screen and (max-width:767px) {
+	
+	.mashup-header .nav .mashup-title { 
+		margin-left:10px; padding:0 
+	}
+	
+	.mashup-header-wrap { 
+		max-width:100%; 
+	}
+
+}
+/* This is just overriding a current style that you should remove from the current CSS as this part of mashup nav isn't ready 
+.mashup-header .header-strip { height:auto; }
+}*/
+
+/* Standalone mashup page - https://trello.com/c/EfBcvcdd*/
+/*.mashup-standalone .mashup-header { position:static; }
+.mashup-standalone .mashup-grid { position:static; padding-top:0; }*/
+/* Standalone mashup page */

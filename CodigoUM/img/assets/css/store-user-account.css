@@ -1,0 +1,296 @@
+/* START : Modal User Account Settings */
+
+/*body {
+    background-color: #fff;
+}*/
+
+
+.displaying-in-modal {
+    background-color: #fff;
+	/*padding: 30px 0;*/
+	padding: 0;
+    }
+
+.user-account .upper {
+	text-align: center;
+	font-size: 13px;
+	line-height: 20px;
+	font-weight: 400;
+	color: #898989;
+	letter-spacing: .2em;
+	margin: 0 0 25px 0;
+	}
+	
+.button.highlight.icon-facebook,
+.button.highlight.icon-twitter {
+	display: block;
+	margin: 0 0 10px 0;
+	padding-left: 60px;
+	}
+	
+.button.highlight.icon-facebook.no-icon,
+.button.highlight.icon-twitter.no-icon {
+	padding: 0 15px;
+	margin: 0 10px 0 0;
+	}	
+
+
+
+		.external-login .button.no-icon:nth-child(even) {
+				margin-right: 0;
+				}	
+	
+	.login-social .button.highlight.icon-facebook,
+	.login-social .button.highlight.icon-twitter {
+		display: inline;
+		overflow: hidden;
+		float: left;
+		width: 145px;
+		}
+	
+.user-forms.login-option .button {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+}
+
+
+@media only screen and (min-width: 579px) {
+	.button.highlight.icon-facebook,
+	.button.highlight.icon-twitter {
+		display: inline-block;
+		margin: 0;
+		}
+
+	.button.highlight.icon-facebook.no-icon,
+	.button.highlight.icon-twitter.no-icon {
+		padding-left: 60px;
+		width: auto;
+		display: inline-block;
+		float: none;
+		text-align: center;
+		}
+	
+		
+}
+	
+	.user-account .account-step {
+		margin: 0 0 11px;
+		}
+		
+	.user-account .upper.strike-title {
+		border-bottom: 1px solid #ccc;
+		position: relative;
+		line-height: 20px;
+		margin: 0 0 33px;
+		}
+		
+		.strike-title span {
+			padding: 0 10px;
+			background: #fff;
+			display: inline-block;
+			top: 10px;
+			position: relative;
+			}
+			
+.login-other {
+	margin: -8px 0 0 0;
+	text-align: center;
+	}
+	
+	.login-email-label {
+		font-size: 18px;
+		line-height: 24px;
+		border-bottom: 1px solid #ccc;
+		padding: 0 0 24px;
+		margin: 0 0 23px;
+		}
+		
+@media only screen and (min-width: 579px) {
+	.login-account-label {
+		margin: 0;
+		}
+}
+
+
+.external-login {
+	width: 100%;
+	padding: 0 0 30px 0;
+	margin: 0 auto 30px;
+	border-bottom: 1px solid #ccc;
+	text-align: center;
+	}
+	
+		.user-forms.login-option label {
+			display: none;
+			}
+			
+		.forgot-link {
+			float: right;
+			line-height: 24px;
+			clear: both;
+			margin: 0;
+			}
+
+.user-avatar {
+	display: none;
+	}
+
+/*.user-forms label {
+	font-size: 13px;
+	color: #898989;
+	padding-bottom: 5px;
+	display: block;
+	width: 100%;
+	}*/
+
+.attend-church .church-attended {
+	margin: 11px 0 5px;
+	}
+
+.connected-account,
+.user-forms {
+	width: 300px;
+	margin: 0 auto;
+	}
+
+@media only screen and (min-width: 579px) {
+		.external-login .button {
+			width: 279px;
+			float: left;
+			}
+			
+			.external-login .button:nth-child(even) {
+				float: right;
+				}
+				
+		.login-option /* Login form centred */ {
+			width: 280px;
+			margin: 0 auto;
+			}		
+			
+.user-account-details {
+	border-top: 1px solid #ccc;
+	padding-top: 30px;
+	}
+
+.user-avatar {
+	float: left;
+	display: inline;
+	width: 150px;
+	}
+	
+	.user-avatar img {
+		margin: 0 0 10px;
+		}
+		
+	.user-avatar .button {
+		padding: 0 7px;
+		width: 100%;
+		}
+
+.connected-account,
+.user-forms {
+	width: 415px;
+	/*float: right;*/
+	/* TODO - When avatar screen is wired up, edit this page to reinstate float: right and remove float:left as the left float is just a temp layout fix to account for no avatar uploads */
+	float: left;
+	display: inline;
+	}
+		
+	.account-form-login {
+		margin: 0 auto 50px;
+		width: 280px;
+		float: none;
+		display: block;
+		}
+	
+	.upper.connected-facebook {
+		}
+	
+	.connected-facebook span,
+	.connected-twitter span {
+		position: relative;
+		padding: 5px 0 0 34px;
+		}
+	
+	.connected-facebook span:before,
+	.connected-twitter span:before {
+		content: " ";
+		position: absolute;
+		left: 0;
+		top: 0;
+		width: 24px;
+		height: 24px;
+		margin: 0 10px 0 0;
+		background: url(/assets/images/facebook-48x48.png) 0 0 no-repeat;
+		background-size: contain;
+		}
+
+		.connected-twitter span:before {
+			background: url(/assets/images/twitter-48x48.png) 0 0 no-repeat;
+			background-size: contain;
+			}
+		
+				.user-forms label.radioBtn {
+				    display: block;
+				    float: none;
+					text-align: left;
+					}
+				
+	.attend-church,
+	.user-form-actions,	
+	.user-forms .button {
+		/*margin-left: 135px;*/
+		display: inline-block;
+		}
+		
+		.user-forms .button {
+			margin-left: 135px;
+			}
+		
+		.attend-church {
+			margin-top: 13px;
+			}
+			
+			.attend-church p {
+				margin: 0 0 11px;
+				}
+				
+			.attend-church span {
+				line-height: 1;
+				}
+				
+				.attend-church .church-attended {
+					display: inline-block;
+					}
+		
+		.user-forms.login-option .button {
+			margin: 0;
+			-webkit-appearance: none;
+			-moz-appearance: none;
+			appearance: none;
+			}
+		
+		.user-form-actions label,
+		.attend-church span {
+			width: 100%;
+			display: block;
+			}
+			
+			.user-form-actions {
+				color: #898989;
+				}
+			
+	.publish-activity {
+		margin: 0 0 10px 0;
+		}
+
+	.user-form-actions.terms {
+		margin: 0 0 24px 135px;
+		}
+} 
+
+
+.
+/* END : Modal User Acount Settings */

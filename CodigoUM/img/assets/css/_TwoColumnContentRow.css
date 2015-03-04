@@ -1,0 +1,72 @@
+/* - START : Text block */
+.two-column-content-row { 
+	text-align: center;
+	}
+	
+	.text-split {
+		margin: 3em 0 0;
+		vertical-align: top;
+		display: inline-block;
+		line-height: 1.5;		
+		}
+		
+		.two-column-content-row .title {
+			font-size: 21px;
+			line-height: 26px;
+			margin: 0 auto 20px;
+			}
+		
+@media only screen and (min-width: 767px) { 
+.two-column-content-row .content {
+	text-align: left;
+	margin: 25px 0 0;
+	
+	-moz-column-count: 2;
+	-moz-column-gap: 40px;
+   -webkit-column-count: 2;
+   -webkit-column-gap : 40px;
+   column-count: 2;
+   column-gap: 40px;	
+	}
+	
+	.ie8 .two-column-content-row .content {
+		width: 540px;
+		margin: 25px auto 0;
+		}
+	
+	.two-column-content-row .title {
+		font-size: 36px;
+		line-height: 44px;
+		/*width: 70%;*/
+		width: 540px;
+		}
+}
+@media only screen and (min-width: 979px) {
+.two-column-content-row .content {
+	-moz-column-gap: 100px;
+   -webkit-column-gap : 100px;
+   column-gap: 100px;		
+	}
+	
+	.ie8 .two-column-content-row .content {
+		width: 700px;
+		}
+
+
+	.two-column-content-row .title {
+		/*width: 74%;*/
+		width: 780px;
+		}
+}
+
+@media only screen and (min-width: 1199px) {
+	.ie8 .two-column-content-row .content {
+		width: 820px;
+		}
+
+
+.two-column-content-row .title {
+		width: 880px;
+		}
+}
+/* - END : Text block */

@@ -1,0 +1,116 @@
+/* START : Hot Songs */
+.hot-songs {
+	display: none;
+	}
+	
+@media only screen and (min-width: 767px) {
+
+	.hot-songs {
+		display: block;
+		clear: both;
+		margin: 0 0 20px;
+		}
+
+}
+	
+	.hot-songs h2 {
+		font-size: 18px;
+		line-height: 24px;
+		margin: 0 0 16px 0;
+		}
+	
+	.hot-songs-list {
+		background: #f3f3f3;
+		width: 350px;
+		float: left;
+		display: inline;
+		list-style: none;
+		margin: 0 20px 0 0;
+		
+		-webkit-box-shadow: 0 0 4px #bbb;
+		-moz-box-shadow: 0 0 4px #bbb;
+		box-shadow: 0 0 4px #bbb;
+		}
+		
+@media only screen and (min-width: 979px) {
+	.hot-songs-list {
+		width: 354px;
+		}
+}
+		
+		.hot-songs-list:nth-child(odd) {
+			margin: 0;
+			}
+			
+@media only screen and (min-width: 979px) {
+	.hot-songs-list {
+		width: 460px;
+		}
+}
+
+@media only screen and (min-width: 1199px) {
+	.hot-songs-list {
+		width: 577px;
+		}
+}
+			
+			.hot-song {
+				border-bottom: 1px solid #dedede;
+				overflow: hidden;
+				}
+				
+				.hot-song img {
+					margin: 1px 10px 1px 1px;
+					float: left;
+					display: inline;
+					}
+					
+				.hot-song-meta {
+					float: left;
+					display: inline;
+					width: 120px;
+					margin: 10px 0 0;
+					}
+				
+				.hot-song p {
+					margin: 0;
+					width: 120px;
+					white-space: nowrap;
+					overflow: hidden;
+					text-overflow: ellipsis;
+					line-height: 20px;
+					}
+					
+@media only screen and (min-width: 979px) {
+	.hot-song-meta,
+	.hot-song p {
+		width: 235px;
+		}
+}
+
+@media only screen and (min-width: 1199px) {
+	.hot-song-meta,
+	.hot-song p {
+		width: 380px;
+		}
+}
+					
+					.hot-song .hot-song-title {
+						font-weight: 700;
+						}
+						
+					.hot-song .hot-song-info {
+						color: #808080;
+						}
+						
+				.hot-song .button.download {
+					float: right;
+					margin: 17px 15px 0 0;
+					padding: 0 5px 0 25px;
+					letter-spacing: .1em;
+					}
+						
+					.hot-song .button.download:before {
+						left: 5px;
+						}
+/* END : Hot Songs */

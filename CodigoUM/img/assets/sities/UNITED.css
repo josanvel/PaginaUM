@@ -1,0 +1,298 @@
+/**
+* HILLSONG UNITED CSS OVERRIDES
+* -----------------------------------
+*
+* Main override styles specific to Hillsong United.
+*
+* Mobile First Approach
+*
+* Author: Coxy (paul.cox@hillsong.com)
+*
+*   Date: 2013.04.19
+*/
+
+
+
+
+
+/*
+//====================================================================
+//
+// MOBILE / SMALL SCREEN (0px - 480px)
+//
+//====================================================================
+*/
+
+.header-row .title {
+	top:104px;
+	max-width: 296px;
+	left: 50%;
+	margin-left: -148px;
+}
+
+.video-controls .video-name { color: #464646; text-align: center; width: 100%; position: relative; top:10px; left: inherit; display: none;  }
+.video-carousel-item .item-gallery-position { margin-top: 0px;}
+.video-carousel-item .item-gallery-slider {  }
+/*
+.header-row .featured-intro {
+	top:176px;
+	text-transform: uppercase;
+	letter-spacing: 0.2em;
+	border: 3px solid #fff;
+	padding: 3px 2px;
+	width: 82px;
+	left:50%;
+	margin-left: -41px;
+}*/
+/*
+.header-row .title { 
+	color: #fff;
+	font-size: 18px;
+	font-weight: bold;
+	text-transform: uppercase;
+	border: 3px solid #fff;
+	padding: 6px 2px;
+	width: 82px;
+	margin-left:50%;
+	left: -41px;
+	letter-spacing: 0.2em;
+	-webkit-font-smoothing: antialiased;
+	text-rendering: optimizeLegibility; 
+	top: inherit !important;
+	bottom: 60px;
+}
+*/
+
+/* Content ------------ */
+.united-text .section-row { padding-top: 45px; padding-bottom: 4px; }
+
+.unitedvideo {
+	padding-bottom: 50px;
+}
+
+/* People ------------- */
+/*
+.personnel {
+	background: #151317;
+	width: 100%;
+	text-align: center;
+	padding-bottom: 0px !important;
+}
+
+.personnel-wrap { margin-bottom: -28px; }
+.personnel-name { color: #ccc; }
+.personnel-role { display: none; }
+.paging-position-wrap { display: none; }
+*/
+
+
+
+/* Albums ------------ */
+.unitedalbums {
+	background: #151317;
+}
+.unitedalbums .carousel { padding-top: 60px; }
+
+.unitedalbums h2 { color: #ccc; }
+
+.unitedalbums .related-content-item .related-title { color: #cccccc; }
+.unitedalbums .related-content-primary { -webkit-box-shadow: inherit; -moz-box-shadow: inherit; box-shadow: inherit; }
+
+.image-gallery-wrap { margin-left: 17px !important; }
+
+.albumcarousel .related-title { color: #464646; }
+
+/*
+//====================================================================
+//
+// TABLET (Bigger than 767px )
+//
+//====================================================================
+*/
+@media only screen and (min-width:767px)
+{
+	/* Header ----------- */
+	/*.header-row { background-position-y: -100px; }
+	.header-row, .header-row .section-row { height: 640px; }
+	.header-row .title { bottom: 90px; }
+	.header-row .social { bottom: 30px; }
+	*/
+	
+	
+	.header-row .title {
+		top:182px;
+		max-width: 694px;
+		margin-left: -347px;
+	}
+	
+	
+	
+	.video-controls .video-name { display: block; }
+	
+	
+	.united-text .section-row { padding-top: 91px; padding-bottom: 27px; }
+	
+
+	/*.unitedvideo { padding-bottom: 100px;  }*/
+	.unitedvideo .video-row { max-width: 560px; }
+	
+	.personnel { padding-bottom: 75px !important; }
+	.personnel img { margin: 0 0 10px 0; }
+	
+	.inspirational-quote-row .section-row { padding-top: 92px; }
+	.inspirational-quote-row .quote-text { width: 623px; }
+	
+	.unitedalbums .carousel { padding-top: 86px; }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+//====================================================================
+//
+// DEFAULT (Bigger than 979px )
+//
+//====================================================================
+*/
+@media only screen and (min-width:979px)
+{
+	/* Header ----------- */
+	/*.header-row, .header-row .section-row { height: 810px; }*/
+	/*.header-row .title { top: 682px; }*/
+	
+	.header-row .title {
+		top:232px;
+	}
+	
+	.header-row .featured-intro {
+		top:405px;
+	}
+	
+	.personnel { padding-bottom: 94px !important; }
+	
+	.inspirational-quote-row .section-row { padding-top: 104px; }
+	.inspirational-quote-row .quote-text { width: 788px; }
+}
+
+
+
+
+
+
+
+
+
+
+
+/*
+//====================================================================
+//
+// LARGE SCREEN ( Bigger than 1199px )
+//
+//====================================================================
+*/
+@media only screen and (min-width:1199px)
+{
+	/* Header ----------- */
+	/*.header-row { background-position-y: -200px; }*/
+	.two-column-content-row .title { width: 780px; }
+}
+
+
+/*
+//====================================================================
+//
+// TOP 10 ( Header Fixes )
+//
+//====================================================================
+*/
+
+@media only screen and (min-width:1680px)
+{
+	.header-row .title {
+		top:282px;
+	}
+	
+	.header-row .featured-intro {
+		top:455px;
+	}
+}
+
+@media only screen and (min-width:1800px)
+{
+	.header-row .title {
+		top:332px;
+		max-width: 800px;
+		margin-left: -400px;
+		
+	}
+	
+	.header-row .featured-intro {
+		top:527px;
+	}
+}
+
+@media only screen and (min-width:1900px)
+{
+	.header-row .title {
+		top:382px;
+	}
+	
+	.header-row .featured-intro {
+		top:575px;
+	}
+}
+
+@media only screen and (min-width:2400px)
+{
+	.header-row .title {
+		top:432px;
+	}
+	
+	.header-row .featured-intro {
+		top:625px;
+	}
+}
+
+
+/*
+@media only screen and (min-width:1280px)
+{
+	.header-row { height: 650px; background-position-y: -400px; }
+}
+
+@media only screen and (min-width:1440px)
+{
+	.header-row { height: 810px; background-position-y: -500px; }
+}
+
+@media only screen and (min-width:1680px)
+{
+	.header-row { background-position-y: -600px; }
+}
+
+@media only screen and (min-width:1800px)
+{
+	.header-row { background-position-y: -800px; }
+}
+
+@media only screen and (min-width:1900px)
+{
+	.header-row { background-position-y: -900px; }
+}
+
+@media only screen and (min-width:2400px)
+{
+	.header-row { background-position-y: -1100px; }
+}
+*/
+
