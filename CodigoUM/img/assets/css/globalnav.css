@@ -1,0 +1,407 @@
+/**
+* GLOBAL NAVIGATION
+* ----------------------------------------
+*
+* Author: Paul Cox (Paul.Cox@hillsong.com)
+*
+*/
+
+
+
+
+/*
+//====================================================================
+//
+// MOBILE / SMALL SCREEN (0px - 480px)
+//
+//====================================================================
+*/
+
+
+.globalnav,
+.globalnav * {
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.globalnav {
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	background: #464646;
+	text-align: left;
+	position: fixed;
+	width: 100%;
+	-webkit-transition: all 0.4s ease 0s;
+	-moz-transition: all 0.4s ease 0s;
+	-o-transition: all 0.4s ease 0s;
+	transition: all 0.4s ease 0s;
+	top:-500px;
+	
+	/*-webkit-box-shadow: 0 0 3px #000;
+	-moz-box-shadow: 0 0 3px #000;
+	box-shadow: 0 0 3px #000;*/
+	
+	-webkit-box-shadow: 0 0 3px #464646;
+	-moz-box-shadow: 0 0 3px #464646;
+	box-shadow: 0 0 3px #464646;
+	
+	font-size: 15px;
+	z-index: 10000;
+}
+
+
+
+.globalnav .globalcontainer { overflow: auto; }
+
+/* GLOBAL NAV: Headings ----------- */
+
+.globalnav .heading { cursor: pointer; }
+
+.globalnav .heading {
+	border-bottom: 1px solid #595959;
+	padding-bottom: 10px;
+	padding-top: 10px;
+	padding-left: 12px;
+}
+
+.globalnav .heading.home {
+	padding-left: 32px;
+}
+
+.globalnav .heading .iconarrow {
+	width: 10px;
+	height: 10px;
+	opacity: 0.7;
+	display: inline-block;
+	background: url('/assets/images/icon-arrow@2x.png') no-repeat;
+	background-size: 10px;
+	background-position: 0px -10px;
+	margin-right: 5px;
+	
+}
+
+.globalnav .heading.opened .iconarrow { background-position: 0px 0px; opacity: 1; }
+.globalnav .heading strong { font-weight: 700; color: #fff; cursor: auto;  }
+.globalnav .heading strong a { opacity: 1; color: #fff; padding-bottom: 0px; padding-top: 0px; cursor: pointer; }
+
+
+/* GLOBAL NAV: Links --------------- */
+
+.globalnav .links {
+	background-color: #3a3a3a;
+	padding-left: 30px;
+	height: 0px;
+	overflow: auto;
+	-webkit-transition: all 0.4s ease 0s;
+	-moz-transition: all 0.4s ease 0s;
+	-o-transition: all 0.4s ease 0s;
+	transition: all 0.4s ease 0s;
+}
+
+.globalnav .links.opened {
+	height: auto;
+	display: inherit;
+}
+
+.globalnav a {
+	color: #bcbcbc;
+	text-decoration: none;
+	display: block;
+	padding-bottom: 10px;
+	padding-top: 10px;
+	margin-right:30px;
+	border-top: 1px solid #595959;
+	-webkit-transition: all 0.4s ease 0s;
+	-moz-transition: all 0.4s ease 0s;
+	-o-transition: all 0.4s ease 0s;
+	transition: all 0.4s ease 0s;
+}
+
+.globalnav a:first-child { border-top:none; }
+
+.globalnav a:hover { color: #fff; }
+
+
+.globalnav .list { margin-bottom: 0px; }
+.globalnav .col { margin-bottom: 0px; }
+
+
+
+/* GLOBAL NAV: Handle --------------------- */
+.globalnav .handle {
+	background: #464646;
+	float: right;
+	cursor: pointer;
+	padding: 10px 8px;
+	position: relative;
+	top: 35px;
+	margin-right: 5px;
+	-webkit-border-bottom-left-radius: 5px;
+	-moz-border-bottom-left-radius: 5px;
+	border-bottom-left-radius: 5px;
+	-webkit-border-bottom-right-radius: 5px;
+	-moz-border-bottom-right-radius: 5px;
+	border-bottom-right-radius: 5px;
+	-webkit-transition: all 0.4s ease 0s;
+	-moz-transition: all 0.4s ease 0s;
+	-o-transition: all 0.4s ease 0s;
+	transition: all 0.4s ease 0s;
+	
+	-webkit-box-shadow: 0 0 3px #464646;
+	-moz-box-shadow: 0 0 3px #464646;
+	box-shadow: 0 0 3px #464646;
+	
+}
+
+.globalnav .handle.highlight {
+	/*background: #2c8eb7;*/
+	/*background: #ccc;
+	-webkit-box-shadow: 0px 0px 2px 3px rgba(0, 0, 0, .15);
+	-moz-box-shadow: 0px 0px 2px 3px rgba(0, 0, 0, .15);
+	box-shadow: 0px 0px 2px 3px rgba(0, 0, 0, .15);*/
+}
+
+.globalnav .handle:hover span { opacity: 0.7; }
+
+.globalnav .handle span  {
+	display: block;
+	width: 15px;
+	height: 15px;
+	opacity: 1;
+	background: url('/assets/images/icon-handle@2x.png') no-repeat;
+	background-size: 15px;
+	-webkit-transition: all 0.2s ease 0s;
+	-moz-transition: all 0.2s ease 0s;
+	-o-transition: all 0.2s ease 0s;
+	transition: all 0.2s ease 0s;
+}
+
+.globalnav .handle.opened span { background-position: 0px -16px; }
+
+.globalnav .handlecontainer { margin-top: 7px; }
+
+/* Login & Language --------------------- */
+
+.globalnav .header-options { padding: 4px 10px;  }
+
+.globalnav .header-options p {
+	margin: 0;
+	line-height: 3;
+	color: #bcbcbc;
+}
+.globalnav .header-options a {
+	display: inline;
+	border-top: none;
+	margin-right: 0px;
+	padding-top: 0px;
+	padding-bottom: 0px;
+}
+
+.globalnav .language {
+	position: absolute;
+	bottom: 7px;
+	right: 10px;
+	margin-top: 7px;
+	padding: 0;
+	background: #7e7e7e;
+	width: 100px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	font-size: 15px;
+}
+
+.globalnav .language.show-language-menu { padding: 0; }
+
+.globalnav .language span {
+	list-style: none;
+	display: none;
+	line-height: 30px;
+	padding-left: 10px;
+	padding-right: 10px;
+	width: 100%;
+}
+
+.globalnav .language.show-language-menu span { display: block; }
+
+.globalnav .language .selected {
+	display: block;
+	background: #7e7e7e url('/assets/images/nav-picker.png') right center no-repeat;
+	font-weight: bold;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+}
+
+.globalnav .language.show-language-menu .selected,
+.globalnav .language.show-language-menu:hover .selected {
+	background: #7e7e7e url('/assets/images/nav-picker.png') right center no-repeat;
+}
+
+.globalnav .language.show-language-menu span { background: #696969; }
+
+.globalnav .language.show-language-menu span:first-child {
+	border-top: 0;
+	-webkit-border-top-left-radius: 5px;
+	-webkit-border-top-right-radius: 5px;
+	-moz-border-radius-topleft: 5px;
+	-moz-border-radius-topright: 5px;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+}
+
+.globalnav .language.show-language-menu li:last-child {
+	border-top: 0;
+	-webkit-border-top-left-radius: 5px;
+	-webkit-border-top-right-radius: 5px;
+	-moz-border-radius-topleft: 5px;
+	-moz-border-radius-topright: 5px;
+	border-top-left-radius: 0;
+	border-top-right-radius: 0;
+
+	-webkit-border-bottom-left-radius: 5px;
+	-webkit-border-bottom-right-radius: 5px;
+	-moz-border-radius-bottomleft: 5px;
+	-moz-border-radius-bottomright: 5px;
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+}
+
+.globalnav .language.show-language-menu li:hover { background: #737373; }
+
+.globalnav .language a { display: block; }
+
+.globalnav .account { position: absolute; right: 120px; bottom: 0px; }
+
+.store .globalnav .setwidth {  }
+/*
+//====================================================================
+//
+// TABLET (Bigger than 767px )
+//
+//====================================================================
+*/
+@media only screen and (min-width: 767px) {
+	
+
+	
+	/* GLOBAL NAV --------------------- */
+	.globalnav {
+		font-size: 15px;
+		line-height: 24px;
+		padding-left: 30px;
+	}
+	
+	.globalnav .setwidth {
+		max-width: 700px;
+		margin: 0 auto;
+	}
+	
+	.globalnav .list { margin-bottom: 24px; }
+	
+	/* GLOBAL NAV: Heading ------------ */
+	.globalnav .heading, .globalnav .heading.home { border-bottom: none; padding-left: 0px; }
+	.globalnav .heading .iconarrow { display: none; }
+	.globalnav .heading {
+		padding-bottom: 0px;
+		padding-top: 0px;	
+	}
+	
+	
+	
+	/* GLOBAL NAV: Links -------------- */
+	.globalnav .links {	background-color: inherit; padding-left: 0px; height: auto; }
+	
+	.globalnav a {
+		padding-bottom: 0px;
+		padding-top: 0px;
+		margin-right:0px;
+		border-top: none;
+	}
+	
+	/* Handle ------------------------- */
+	.globalnav .handlecontainer { margin-top: -34px; }
+	
+	/* Login & Language --------------- */
+	.globalnav .header-options {
+		font-size: 13px;
+		line-height: 30px;
+		background: none;
+		border-top: 0;
+		padding: 0;
+		position: relative;
+		right: 0px;
+		
+		width: 100%;
+	}
+
+	.globalnav .language { bottom: 20px; }
+
+	.globalnav .account {
+		position: absolute;
+		right: 130px;
+		bottom: 15px;
+	}
+	
+	/*.globalnav .handle { margin-right: 9px; }*/
+	
+	.store .globalnav .setwidth { max-width: 692px; }
+	
+}
+
+/*
+//====================================================================
+//
+// DEFAULT (Bigger than 979px )
+//
+//====================================================================
+*/
+@media only screen and (min-width: 979px) {
+	.globalnav .setwidth {
+		max-width: 900px;
+		margin: 0 auto;
+	}
+	
+	/* Login & Language --------------- */
+	.globalnav .language {
+		width: 120px;
+		bottom: 24px;
+	}
+	
+	.globalnav .account {
+		position: absolute;
+		right: 150px;
+		bottom: 18px;
+	}
+	
+	/* Handle ------------------------- */
+	.globalnav .handlecontainer { margin-top: -34px; }
+	
+	/*.globalnav .handle { margin-right: -6px; }*/
+	
+	.store .globalnav .setwidth { max-width: 925px; }
+}
+
+
+
+
+/*
+//====================================================================
+//
+// LARGE SCREEN ( Bigger than 1199px )
+//
+//====================================================================
+*/
+@media only screen and (min-width:1199px)
+{
+	.globalnav .setwidth {
+		max-width: 1120px;
+		margin: 0 auto;
+	}
+	
+	/* Handle ------------------------- */
+	.globalnav .handlecontainer { margin-top: -34px; }
+	/*.globalnav .handle { margin-right: -14px; }*/
+	
+	.store .globalnav .setwidth { max-width: 1155px; }
+}

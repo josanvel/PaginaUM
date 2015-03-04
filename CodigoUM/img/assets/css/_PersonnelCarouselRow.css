@@ -1,0 +1,174 @@
+/* - START : People Carousel */
+
+.carousel.section-row {
+	padding: 50px 0;
+	}
+
+@media only screen and (min-width: 767px) {
+	.carousel.section-row {
+		padding: 100px 0;
+		}
+}
+
+.personnel {
+	position: relative;
+	}
+
+	.personnel-position {
+		overflow: hidden;
+		margin: 0 auto;
+		width: 320px;
+		}
+
+		.personnel-position .pagination {
+			width: 25px;
+			}
+
+	.personnel-wrap {
+		display: inline-block;
+		margin: 0 auto;
+		float: left;
+		width: 270px;
+		overflow: hidden;
+		}
+
+	.personnel-preview {
+		float: left;
+		display: inline;
+		list-style: none;
+		text-align: center;
+		vertical-align: middle;
+		position: relative;
+		padding: 0 10px;
+		width: 90px;
+		}
+
+		.ie7 .personnel-position,
+		.ie8 .personnel-position {
+			/*width: 280px;*/
+			overflow: hidden ;
+			position: relative;
+			}
+
+		.ie7 .personnel-wrap,
+		.ie8 .personnel-wrap,
+		.ie7 .personnel-preview,
+		.ie8 .personnel-preview {
+			/*width: 240px;*/
+			overflow: hidden;
+			}
+
+			.ie7 .pagination,
+			.ie7 .pagination a,
+			.ie8 .pagination,
+			.ie8 .pagination a {
+				float: left;
+				position: relative;
+				}
+
+.personnel-name,
+.personnel-status,
+.personnel-role {
+	margin: 0;
+	font-size: 15px;
+	line-height: 20px;
+	}
+
+	.personnel-role {
+		margin: 0 0 1em 0;
+		}
+
+.tooltip-close {
+	text-align: right;
+	opacity: .5;
+	}
+
+	.tooltip-close:hover {
+		opacity: 1;
+		}
+
+@media only screen and (min-width: 767px) {
+	.personnel-position {
+		width: 768px;
+		}
+
+		.personnel-position .pagination {
+			width: 44px;
+			}
+
+		.personnel-wrap {
+			width: 680px;
+			}
+
+		.personnel-preview {
+			width: 136px;
+			padding: 0 15px;
+			}
+}
+
+@media only screen and (min-width: 979px) {
+	.personnel-position {
+		width: 980px;
+		}
+
+		.personnel-position .pagination {
+			width: 40px;
+			}
+
+		.personnel-wrap {
+			width: 900px;
+			}
+
+		.personnel-preview {
+			width: 180px;
+			}
+
+}
+
+@media only screen and (min-width: 1199px) {
+	.personnel-position {
+		width: 1200px;
+		}
+
+		.personnel-position .pagination {
+			width: 50px;
+			}
+
+		.personnel-wrap {
+			width: 1100px;
+			}
+
+		.personnel-preview {
+			width: 220px;
+			}
+}
+
+		.personnel-preview:hover {
+			cursor: default;
+			}
+
+		.personnel img {
+			margin: 0 0 6px 0;
+			}
+
+@media only screen and (min-width: 979px) {
+	.personnel img {
+		margin: 0 0 11px 0;
+		}
+}
+
+		.personnel p {
+			margin: 0;
+			}
+
+			.personnel-name {
+				}
+
+			.personnel-bio {
+				margin: 1em 0;
+				}
+
+				.personnel-social p {
+					margin: 0 0 .4em 0;
+					}
+/* - END : People Picker */

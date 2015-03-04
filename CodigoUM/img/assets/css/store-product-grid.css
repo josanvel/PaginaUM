@@ -1,0 +1,149 @@
+/* START : Product Item */
+.category-product-wrap {
+	height: 215px;
+	overflow: hidden;
+	margin: 0 -20px 0 -22px;
+	padding: 0 0 0 22px;
+	}
+
+	.product-item {
+		width: 145px;
+		height: 213px;
+		}
+		
+		.mashup-grid .product-item {
+			height: 230px;
+			}
+	
+@media only screen and (min-width: 767px) {
+	.category-product-wrap {
+		height: 317px;
+		margin: 1px auto 19px;
+		padding: 0;
+		}
+		
+		.product-item,
+		.product-item:nth-child(2n+2) {
+			width: 220px;
+			height: 300px;
+			}	
+			
+			.mashup-grid .product-item {
+				height: 350px;
+				}
+}
+
+@media only screen and (min-width: 979px) {
+	
+}	
+
+@media only screen and (min-width: 1199px) {
+	.category-product-wrap {
+		padding: 0;
+		}
+}
+	
+
+	.product-picture {
+		height: 145px; 
+		
+		-webkit-border-top-left-radius: 3px;
+		-webkit-border-top-right-radius: 3px;
+		-moz-border-radius-topleft: 3px;
+		-moz-border-radius-topright: 3px;
+		border-top-left-radius: 3px;
+		border-top-right-radius: 3px;
+		}
+		
+@media only screen and (min-width: 767px) {
+	.product-picture {
+		height: 220px;
+		}
+}
+	
+	.product-meta {
+		padding: 10px 15px;
+		}
+		
+		.product-meta p {
+			margin: 0;
+			font-size: 12px;
+			line-height: 16px;
+			}
+
+	.product-label-overlay {
+		position: absolute;
+		top: 5px;
+		right: 5px;
+		text-transform: uppercase;
+		font-size: 13px;
+		font-weight: 700;
+		letter-spacing: .01em;
+		line-height: 1;
+		padding: 5px 9px;
+		color: #f09e9e;
+		background: #000;
+		opacity: .75;
+		z-index: 100;
+		
+		-moz-border-radius: 5px;
+		-webkit-border-radius: 5px;
+		border-radius: 5px;
+		}
+			
+@media only screen and (min-width: 767px) {
+	.product-meta p {
+		font-size: 15px;
+		line-height: 20px;
+		}
+		
+	.product-label-overlay {
+		top: 7px;
+		right: 7px;
+		}
+}
+			
+		.product-item-name {
+			font-weight: 700;
+			color: #464646;
+			}
+			
+		.product-item-type {
+			color: #808080;
+			}
+
+/* END : Product Item */
+
+.highlighted-product {
+	margin: 0 0 10px;
+	}
+	
+@media only screen and (min-width: 767px) {
+	.product-grid {
+		width: 768px;
+		}
+
+	.highlighted-product {
+		margin: 0 8px 18px 0;
+		}
+}
+
+@media only screen and (min-width: 979px) {
+	.product-grid {
+		width: 980px;
+		}
+		
+	.highlighted-product {
+		margin: 0 -2px 18px 0;
+		}
+}
+
+@media only screen and (min-width: 1199px) {
+	.product-grid {
+		width: 1230px;
+		}
+		
+	.highlighted-product {
+		margin: 0 12px 18px;
+		}
+}

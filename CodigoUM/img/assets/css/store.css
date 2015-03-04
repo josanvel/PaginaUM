@@ -1,0 +1,1657 @@
+/*
+	HILLSONG CHURCH
+	-----------------------
+	Author 	: 	James Young
+
+	CONTENTS
+	-------------
+	- Global Nav
+	- Global Rules
+		- Store User Account
+	- Store Grid 
+	- Product Page
+
+*/
+
+.store {
+	background: #d7d7d7;
+	}
+	
+	.isInAModal.store,
+	.modal-content body {
+		background: #fff;
+		}
+
+/* START : Global Rules */
+.store-grid,
+.modal-inner {
+	width: 302px;
+	margin: 0 auto;
+	padding: 0;
+	position: relative;
+	}
+	
+	.overlay-content {
+		background: #fff;
+		width: 320px;
+		padding: 10px;
+		margin: 0 auto 50px;
+		z-index: 10001; /* To appear above global nav tab on small screen */
+		}
+	
+@media only screen and (min-width: 579px) {
+	.overlay-content {
+		margin: 20px auto 50px;
+		}
+
+	.ie8 .non-modal-wrap .overlay-content {
+		width: 580px;
+		}
+}	
+	
+@media only screen and (min-width: 767px) {
+	.non-modal-wrap .overlay-content {
+		width: 580px;
+		}
+}
+		
+		.overlay-content.checkout,
+		.overlay-content.user-account {
+			width: 300px;
+			margin-top: 30px;
+			}
+		
+/*.store-grid {
+	background: pink;
+	}*/
+	
+@media only screen and (min-width: 767px) {
+.store-grid {
+	width: 768px;
+	padding: 0 20px;
+	}
+}	
+
+@media only screen and (min-width: 979px) {
+.store-grid {
+	width: 980px;
+	padding: 0 20px;
+	}
+
+	
+}	
+
+@media only screen and (min-width: 1199px) {
+.store-grid {
+	width: 1199px;
+	padding: 0;
+	}
+}	
+
+
+
+@media only screen and (min-width: 579px) {
+	/* Lightbox display */
+	.modal-inner {
+		margin: 30px auto;
+		width: 680px;
+		padding: 30px 0 0 0;
+		position: relative;
+		z-index: 30;
+
+		-webkit-border-radius: 5px;
+		-moz-border-radius: 5px;
+		border-radius: 5px;
+
+		-webkit-box-shadow: 0 0 3px #666;
+		-moz-box-shadow: 0 0 3px #666;
+		box-shadow: 0 0 3px #666;
+		}
+		
+		.is-tweet .modal-inner {
+			padding: 0;
+			}
+}
+
+@media only screen and (min-width: 579px) {
+.is-event .modal-inner:before,
+.is-event .modal-inner:after {
+	content: " ";
+	position: absolute;
+	top: -15px;
+	left: 20px;
+	width: 9px;
+	height: 38px;
+	background-image: url(/assets/images/modal-event-hook.png);
+	background-position: top center;
+	background-repeat: no-repeat;
+	background-size: contain; 
+	z-index: 10;
+	}
+	
+	.is-event .modal-inner:after {
+		right: 20px;
+		left: auto;
+		}
+}
+
+
+
+
+/* START : Non modal content */
+.non-modal-wrap {
+	margin-top: -20px;
+	position: relative;
+	z-index: 1;
+	}
+	
+	.non-modal-inner.intro {
+		background: #fff;
+		padding: 20px 0 0;
+		}
+		
+	.non-modal-inner.detail {
+		background: #f3f3f3;
+		}
+
+	.non-modal-inner.related {
+		background: #000;
+		}
+
+.non-modal-wrap .overlay-content {
+	margin: 0 auto;
+	padding: 0 10px;
+	position: relative;
+	background: none;
+
+	-webkit-border-radius: 0;
+	-moz-border-radius: 0;
+	border-radius: 0;
+
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	box-shadow: none;
+	}
+	
+@media only screen and (min-width: 579px) {
+	.non-modal-wrap .overlay-content {
+		padding: 0 50px;
+		}
+
+}
+/* END : Non modal content */
+
+
+
+.store-header {
+	position: relative;
+	background: #fff;
+	margin: 0 0 20px;
+	/*box-shadow: 0px 3px 4px #999, 
+        -10px 8px 15px transparent, 10px 8px 15px transparent;*/
+		
+	box-shadow: 0 0 5px #555;	
+	z-index: 2;
+	}	
+	
+.store-header-wrap {
+	margin: 0 auto;
+	position: relative;
+	/*max-width: 320px;*/
+	}
+		
+@media only screen and (min-width: 767px) {
+	.store-header-wrap {
+		/*max-width: 728px;*/
+		width: 100%;
+		max-width: 768px;
+		padding: 0 20px;
+		}
+}
+	
+@media only screen and (min-width: 979px) {
+.store-header-wrap {
+	max-width: 960px;
+	padding: 0 10px;
+	}
+}
+	
+@media only screen and (min-width: 1199px) {
+.store-header-wrap {
+	max-width: 1188px;
+	padding: 0 0 0 7px;
+	}
+}
+	
+	.store-header .logo {
+		margin: 0;
+		display: table;
+		margin: 15px 0 15px 10px;
+		}
+		
+@media only screen and (min-width: 767px) {
+	.store-header .logo {
+		margin: 15px 0 15px 0;
+		}
+}
+		
+		.store-header .logo img,
+		.store-header .logo a,
+		.store-header .logo span,
+		.store-header  .titlelink a {
+		
+			display: table-cell;
+			vertical-align: middle;
+			}
+			
+			.store-header .logo img {
+				width: 60px;
+				margin: 0 7px 0 0;
+				}
+				
+@media only screen and (min-width: 767px) {
+	.store-header .logo img {
+		width: 90px;
+		margin: 0 10px 0 0;
+		}
+}
+				
+
+			.store-header .logo a,
+			.store-header .titlelink a,
+			.store-header .logo span {
+				color: #464646;
+				font-size: 24px;
+				font-weight: 700;
+				}
+
+.user-account h1,
+.checkout h1 {
+	margin: 0 0 17px;
+	text-align: center;
+	font-size: 20px;
+	line-height: 21px;
+	}
+	
+	.checkout h1 {
+		text-align: left;
+		}
+	
+@media only screen and (min-width: 579px) {
+	.user-account h1,
+	.checkout h1 {
+		font-size: 36px;
+		line-height: 44px;
+		}
+}
+
+/* START : Global Nav */
+@media only screen and (min-width: 767px) {
+	.nav-inactive, .nav-active {
+		right: 29px;
+		}
+}
+
+@media only screen and (min-width: 979px) {
+	.nav-inactive, .nav-active {
+	right: 19px;
+	}
+}
+
+@media only screen and (min-width: 1199px) {
+	.nav-inactive, .nav-active {
+	right: 12px;
+	}
+}
+/* END : Global Nav */
+
+
+				
+.basket {
+	position: absolute;
+	top: 49px;
+	/*right: 6px;*/
+	right: 5px;
+	width: 31px;
+	height: 31px;
+	line-height: 31px;
+	font-size: 13px;
+	overflow: hidden;
+	z-index: 998;
+	
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	}
+	
+	.basket a {
+		position: relative;
+		float: left;
+		line-height: 31px;
+		padding: 0;
+		}
+		
+		.basket:hover a {
+			
+			}
+	
+@media only screen and (min-width: 767px) {
+	.basket {
+		right: 28px
+		}
+}
+
+@media only screen and (min-width: 979px) {
+	.basket {
+		right: 8px;
+		}
+}
+
+@media only screen and (min-width: 1199px) {
+	.basket {
+		right: 5px;
+		}
+}
+
+		.basket:hover,
+		.basket:focus {
+			width: auto;
+			}	
+	
+		.basket div {
+			float: left;
+			display: inline;
+			}		
+			
+		.basket-items {
+			height: 31px;
+			font-weight: 700;
+			color: #fff;
+			background: #3e7da7;
+
+			-webkit-border-radius: 3px;
+			-moz-border-radius: 3px;
+			border-radius: 3px;
+			}
+			
+			.basket:hover .basket-items {
+				float: right;
+				}
+		
+		.basket-items .basket-count {
+			float: left;
+			width: 31px;
+			height: 31px;
+			font-weight: 700;
+			color: #3e7da7;
+			background: #3e7da7 url(/assets/images/basket-icon.png) center center no-repeat;
+			text-align: center;
+			font-size: 10px;
+			padding-top: 4px;
+
+			-webkit-border-radius: 3px;
+			-moz-border-radius: 3px;
+			border-radius: 3px;
+			}	
+			
+			
+			.basket-label {
+				padding: 0 0 0 8px;
+				}
+			/*.basket-items:hover,
+			.basket-items .basket-count:hover {
+				background-color: #2c8eb7;
+				}*/
+			
+			.basket-checkout-link,
+			.basket-checkout-link:hover {
+				padding: 0 8px;
+				color: #fff;
+				}	
+				
+				.basket-checkout-link:hover {
+					padding: 0 8px 0 0;
+					}
+				
+			.basket-user {
+				background: #464646;
+				margin-right: 5px;
+				padding: 0 8px;
+				
+				-webkit-border-radius: 3px;
+				-moz-border-radius: 3px;
+				border-radius: 3px;
+				}
+				
+				.basket-user a {
+					color: #fff;
+					font-weight: 700;
+					}
+					
+					.basket-user a.basket-status {
+						color: #ccc;
+						}
+						
+					.basket-person-avatar {
+						margin: 2px 5px 0 -6px;
+						float: left;
+						
+						-webkit-border-radius: 3px;
+						-moz-border-radius: 3px;
+						border-radius: 3px;
+						}
+	
+	
+		
+@media only screen and (max-width: 767px) {
+/* Note: Because the small screen designs are trying to get the navigation to double up as a breadcrumb, we have to do some hacking that's less than ideal */
+	.nav {
+		/*width: 150px; this is width without search icon */
+		width: 137px;
+		left: 7px;
+		top: 5px;
+		position: absolute;
+		list-style: none;
+		
+		-webkit-border-radius: 5px;
+		-moz-border-radius: 5px;
+		border-radius: 5px;	
+		}
+		
+		.nav.is-sub-nav {
+			/*right: 10px; this is right without search icon*/
+			right: 37px;
+			left: auto;
+			}
+			
+			.nav a {
+				letter-spacing: .1em;
+				text-transform: uppercase;
+				color: #898989;
+				font-size: 12px;
+				font-weight: 700;
+				line-height: 30px;
+				padding: 0 10px;
+				display: block;
+				position: relative;
+				}
+				
+				.nav a:hover {
+					color: #464646;
+					}
+					
+				.is-main-nav li,
+				.is-sub-nav li {
+					display: none;
+					}
+						
+					.nav .mirror-link,
+					.is-main-nav:hover li,
+					.is-sub-nav:hover li {
+						display: block;
+						}
+						
+					.nav li {
+						background: #e5e5e5;
+						}	
+						
+					.nav .mirror-link,
+					.is-main-nav li:hover,
+					.is-sub-nav li:hover {
+						background: #fff;
+						}
+						
+						.nav .mirror-link,
+						.is-sub-nav .mirror-link:hover, 
+						.is-main-nav .mirror-link:hover {
+							background: #fff url(/assets/images/webkit-select.png) center right  no-repeat;		
+							
+							-webkit-border-radius: 5px;
+							-moz-border-radius: 5px;
+							border-radius: 5px;	
+								}
+
+.mashup-header,
+.store-header {
+	z-index: 50;
+	}
+
+
+
+.mashup-header .header-strip {
+	/*height: 80px;*/
+	}
+
+.mashup-header .nav.is-main-nav {
+	position: relative;
+	width: 102%;
+	display: block;
+	background: #fff;
+	background-image: none;
+	margin: -10px;
+	padding: 5px;
+	border-radius: 0;
+	}
+	
+	.mashup-header .nav.is-main-nav .mirror-link {
+		background: #fff;
+		background-image: none;
+		}
+	
+	.mashup-header .nav.is-sub-nav {
+		position: relative;
+		right: auto;
+		left: 7px;
+		top: auto;
+		bottom: -20px;
+		} 
+		
+}
+
+.mashup-header .basket {
+	top: 45px;
+	}
+			
+
+.header-strip {
+	background: #ebebeb;
+	clear: both;
+	padding: 5px 0;
+	position: relative;
+	height: 40px;
+	}
+
+	.store-header.is-sub {
+			background: #fff url(/assets/images/header-nav-bar-grey-1.gif) 0 bottom repeat-x;
+			}
+
+@media only screen and (min-width: 767px) {
+/* Sorry, had to lump all the nav properties into a big MQ because the UI is completely different and it's a little easier to understand the CSS if you just consider them as two entirely different entities. */
+	.header-strip {
+		position: relative;
+		background: none;
+		padding: 0;
+		}
+		
+		.is-sub .header-strip {
+			height: 70px;
+			}
+
+	.nav {
+		background: none;
+		width: 100%;
+		float:left;
+		position: relative;
+		
+		-webkit-border-radius: 0;
+		-moz-border-radius: 0;
+		border-radius: 0;
+		}
+		
+		/*.is-sub-nav {
+			min-height: 40px;
+			}*/
+			
+		.nav a {
+			letter-spacing: .1em;
+			text-transform: uppercase;
+			color: #898989;
+			font-size: 12px;
+			font-weight: 700;
+			line-height: 40px;
+			padding: 0 10px;
+			display: block;
+			position: relative;
+			}
+			
+			.nav a:hover {
+				color: #464646;
+				}
+
+		/*.nav li {
+			display: none;
+			list-style: none;
+			}*/
+		
+		.nav:hover,
+		/*.nav .current .child,*/
+		.nav .mirror-link/*,
+		.nav .current .child .current*/ {
+			background: none;
+	
+			-webkit-border-radius: 0;
+			-moz-border-radius: 0;
+			border-radius: 0;
+			}
+			
+			.nav li/*,
+			.nav:hover li,
+			.nav .current,
+			.nav .current .child .current,
+			.nav .current .child li,
+			.nav .current .child:hover li*/ {
+				display: inline;
+				float: left;
+				}
+				
+				/*.nav .child,
+				.nav:hover .child,*/
+				.nav .mirror-link
+				/* .nav .current .child li.mirror-link,
+				.nav:hover .mirror-link,
+				.nav .current .child:hover li */{
+					display: none;
+					}
+					
+					.mashup-header .nav .mirror-link {
+						display: block;
+						}
+				
+				/*.nav .current .child {
+					position: absolute;
+					right: auto;
+					top: 32px;
+					left: 0;
+					width: 100%;
+					display: block;
+					}	*/
+					
+					.is-sub-nav a {
+						text-transform: none;
+						letter-spacing: normal;
+						}
+						
+						.nav /*.current .child*/ a {
+							color: #898989;
+							padding: 0 10px 0 0;
+							font-size: 13px;
+							}
+							
+							.mashup-nav-title.nav a {
+								color: #898989;
+								}
+								
+								.mashup-nav-title.nav a:hover {
+									color: #464646;
+									}
+								
+								/*.open-button {
+									margin-top: 13px;
+									}*/
+															
+						.nav .current a/*,
+						.nav .current .current a*/ {
+							color: #2c8eb7;
+							}
+							
+							.nav a:hover/*,
+							.nav .current .child a:hover,
+							.nav .current a:hover*/ {
+								color: #005481
+								}
+}
+	
+	
+/* START : Store search */
+@media only screen and (max-width: 767px) {
+/* Don't display the header and nav tab on mobiles */
+.is-search .store-header-search,
+.is-search .sitewide-navigation {
+	display: none !important;
+	}
+	
+.is-search .store-header {
+	background: #ebebeb;
+	}
+}
+
+.search-contain {
+	position: relative;
+	height: 30px;
+	padding: 0 5px;
+	display: none;
+	background: #ebebeb;
+	}
+	
+	.search-contain.inactive {
+		display: none;
+		}
+		
+@media only screen and (min-width: 979px) {
+	.search-contain.inactive 	{
+		display: block;
+		}
+}
+	
+	.search-contain.active {
+		display: block;
+		z-index: 200;
+		}
+		
+@media only screen and (min-width: 767px) {
+	.search-contain.active {
+		position: absolute;
+		top: 5px;
+		background: #fff;
+		width: 100%;
+		}
+}
+
+@media only screen and (min-width: 979px) {
+	.search-contain.inactive,
+	.search-contain.active {
+		position: absolute;
+		top: 5px;
+		right: 0;
+		padding: 0;
+		background: #fff;
+		width: auto;
+		}
+}
+
+.store-search-wrap {
+	position: relative;
+	width: auto;
+	height: 30px;
+	}
+	
+@media only screen and (min-width: 979px) {
+	.store-search-wrap {
+		width: 160px;
+		float: right;
+		}	
+}
+	
+	
+.store-search {
+	height: 26px;
+	width: 275px;
+	margin-top: 2px;
+	float: left;
+	background: #fff;
+	border: 0;
+	font-size: 15px;
+	
+	box-shadow: inset 0px 1px 3px 0px #999;
+	border-radius: 15px;
+	-webkit-appearance: none;
+	}	
+	
+@media only screen and (min-width: 767px) {
+	.store-search {
+		width: 674px;
+		}	
+}
+	
+
+@media only screen and (min-width: 979px) {
+.store-search-wrap {
+	height: 26px;
+	width: 155px;
+	margin-top: 2px;
+	float: left;
+	border: 0;
+	font-size: 15px;
+	
+	box-shadow: inset 0px 1px 3px 0px #999;
+	border-radius: 15px;
+	-webkit-appearance: none;	
+	}
+	
+	.store-search {
+		width: 121px;
+		padding: 0 0 0 5px;
+		margin: 2px 0 0 2px;
+		height: 23px;
+		
+		box-shadow: none;
+		
+		-webkit-border-radius: 0;
+		-moz-border-radius: 0;
+		border-radius: 0;
+		
+		-webkit-border-top-left-radius: 15px;
+		-webkit-border-bottom-left-radius: 15px;
+		-moz-border-radius-topleft: 15px;
+		-moz-border-radius-bottomleft: 15px;
+		border-top-left-radius: 15px;
+		border-bottom-left-radius: 15px;
+		}	
+}
+	
+
+.store-search-submit,
+.store-search-close,
+.store-search-trigger {
+	position: absolute;
+	top: 0;
+	right: 5px;
+	height: 30px;
+	width: 30px;
+	background-color: #dcdcdc;
+	background-image: url(/assets/images/store-header-search.gif);
+	background-position: center center; 
+	background-repeat: no-repeat;
+	border: 0;
+	text-indent: -9999px;
+	cursor: pointer;
+	
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+
+	-webkit-appearance: none;
+	}	
+	
+	.store-search::-webkit-input-placeholder { text-indent: -9999em; }	
+	:focus::-moz-placeholder { text-indent: -9999em; }
+	
+	.store-search:focus,
+	.store-focus:active {
+			outline: 0; /* Set against recommendation, ideally would style outline or leave as default */
+		}
+			
+	.store-search::-webkit-search-cancel-button {
+		-webkit-appearance: none;
+		}
+		
+	.store-search-submit {
+		position: relative;
+		margin-left: -29px;
+		top: 4px;
+		height: 22px;
+		width: 26px;
+		background-color: #fff;
+		background-image: url(/assets/images/store-header-search.gif);
+		}
+		
+	html[data-useragent*='MSIE 10.0'] .store-search-submit,
+	.ie .store-search-submit {
+		/* Specific fix for positioning in IE10 uses -> http://css-tricks.com/ie-10-specific-styles/*/
+		top: 1px;
+		}
+			
+@media only screen and (min-width: 767px) {
+	.store-search-submit {
+		top: 2px;
+		height: 21px;
+		}
+}
+				
+	.store-search-trigger {
+		z-index: 100;
+		top: 5px;
+		}
+
+@media only screen and (min-width: 979px) { 
+	.store-search-trigger {
+		display: none;
+		}
+		
+	.store-search-submit {
+		margin: 0;
+		right: -1px;
+		top: -1px;
+		height: 22px;
+		border-radius: 15px;
+	    background-color: transparent;		
+		}
+}
+			
+	.store-search-close {
+		/* Only needed on mobile+tablet */
+		background-image: url(/assets/images/close-icon.png);
+		background-size: 12px 12px;
+		}	
+		
+@media only screen and (min-width: 979px) {
+	.store-search-close {
+		display: none;
+		}
+}
+		
+		.store-search-suggest {
+			background: #d7d7d7;
+			position: absolute;
+			top: 35px;
+			left: 0;
+			padding: 5px 20px;
+			width: 100%;
+			overflow: auto;
+			
+			box-shadow: inset 0 4px 9px -6px #000;
+			}
+		
+@media only screen and (min-width: 979px) {
+	.store-search-suggest {
+		width: 175px;
+		left: auto;
+		background: #fff;
+		right: -3px;
+		top: 27px;
+		padding: 10px 15px;
+		
+		border-radius: 5px;
+		box-shadow: none;
+		}
+}
+
+@media only screen and (min-width: 1199px) {
+	.store-search-suggest {
+		right: 6px;
+		}
+}
+			
+			.store-search-suggest ul {
+				list-style: none;
+				width: 85%;
+				}
+				
+				.store-search-suggest a {
+					font-weight: 700;
+					line-height: 40px;
+					}
+	
+@media only screen and (min-width: 979px) {
+	.store-search-suggest a {
+		line-height: 24px;
+		font-weight: 400;
+		}
+}
+	
+.ui-menu .ui-menu-item a {
+    font-size: 15px;
+    line-height: 40px;
+	font-weight: 700;
+}
+
+.ui-autocomplete li  {
+    cursor: pointer;
+}
+
+.ui-autocomplete {
+	position: absolute;
+	top: 35px;
+	left: 0;
+	padding: 15px 0 0;
+	width: 100%;
+	overflow: auto;
+    z-index: 1000 !important;
+	
+	/*box-shadow: inset 0 4px 9px -6px #000;*/
+	}
+		
+@media only screen and (min-width: 979px) {
+	.ui-autocomplete {
+		width: 175px;
+		left: auto;
+		background: #fff;
+		right: -3px;
+		top: 27px;
+		padding: 10px 15px;
+		
+		border-radius: 5px;
+		box-shadow: none;
+		}
+}
+
+@media only screen and (min-width: 1199px) {
+	.ui-autocomplete {
+		right: 6px;
+		}
+}
+	
+@media only screen and (min-width: 979px) {
+	.ui-menu .ui-menu-item a {
+		line-height: 24px;
+		font-weight: 400;
+		}
+}
+
+
+/* -- START : Search results */
+.search-title {
+	font-size: 15px;
+	line-height: 20px;
+	margin: 0 0 20px;
+	letter-spacing: normal;
+	color: #464646;
+	text-align: left;
+	}
+	
+@media only screen and (min-width: 767px) {
+	.search-title {
+		font-size: 18px;
+		line-height: 24px;
+		}
+}
+
+.search-item {
+	padding: 3px 0;
+	width: 300px;
+	margin-bottom: 20px;
+	}
+	
+	.search-item .item-link {
+		float: left;
+		display: inline;
+		width: 225px;
+		}
+	
+@media only screen and (min-width: 767px) {
+.search-item {
+	width: 340px;
+	margin: 0 20px 20px 0;
+	float: left;
+	display: inline;
+	}
+	
+	.search-item .item-link {
+		width: 335px;
+		}
+
+}
+
+@media only screen and (min-width: 979px) {
+.search-item {
+	width: 50%;
+	margin: 0 0 20px 0;
+	padding-right: 20px;
+	}
+	
+	.search-item .item-link {
+		width: 100%;
+		}
+
+}
+		
+	.search-item .button {
+		float: right;
+		display: inline;
+		width: 73px;
+		padding-left: 30px;
+		letter-spacing: normal;
+		margin-top: 15px;
+		}
+		
+		.search-item .button span {
+			display: none;
+			}
+	
+@media only screen and (min-width: 767px) {
+	.search-item .button {
+		float: left;
+		width: auto;
+		margin: -30px 0 0 130px;
+		}
+		
+		.search-item .button span {
+			display: inline;
+			}
+}
+	
+	.search-item img {
+		float: left;
+		display: inline;
+		margin: 0 10px 0 0;
+		width: 70px;
+		
+		box-shadow: 0 0 3px #444;
+		border-radius: 5px;
+		}
+		
+@media only screen and (min-width: 767px) {
+	.search-item img {
+		width: 120px;
+		}
+}
+		
+	.search-item p {
+		margin: 0;
+		font-size: 12px;
+		font-weight: 700;
+		line-height: 16px;
+		color: #898989;
+		}
+		
+		.search-item .product-category {
+			text-transform: uppercase;
+			letter-spacing: .1em;
+			}
+			
+		.search-item .product-title {
+			color: #464646;
+			}
+
+@media only screen and (min-width: 767px) {
+.search-item p {
+	font-size: 15px;
+	line-height: 20px;
+	}
+	
+	.search-item .product-meta-2 {
+		font-weight: 400;
+		}
+}
+/* -- END : Search results */
+
+/* END : Store search */
+		
+.modal-logo {
+	margin: 0 auto 30px;
+	display: block;
+	}
+
+.overlay-content [type=text],
+.overlay-content [type=email],
+.overlay-content [type=password],
+.overlay-content select {
+	background: #ebebeb;
+	color: #464646;
+	font-size: 18px;
+	letter-spacing: -1px;
+	padding: 13px;
+	width: 100%;
+	border: 0;
+	margin: 0 auto 10px;	
+	
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	}
+	
+	.overlay-content select {
+		-webkit-appearance: none;
+		background: #ebebeb url(/assets/images/webkit-select.png) right center no-repeat;
+		}
+		
+	input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0px 1000px #ebebeb inset;
+	color: #464646;
+	}
+	/*.overlay-content div {
+		display: block;
+		}*/
+
+.overlay-content input.error {
+    background: #fdd;
+    z-index: 1;
+}
+
+.overlay-content label.error {
+    position: relative;
+    display: block;
+    background: #f66;
+    color: #fff;
+    width: 280px;
+    padding: 2px 5px;
+    margin: -5px 0 10px 135px;
+    z-index: 1;
+    -webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+}
+
+.overlay-content label.error:after
+{
+    content: "";
+    position: absolute;
+    top: -10px;
+    left: 10px;
+    border-style: solid;
+    border-width: 0 10px 10px;
+    border-color: #f66 transparent;
+    display: block;
+    width: 0;
+    z-index: 2;
+}
+
+.overlay-content label {
+	font-size: 13px;
+	color: #898989;
+	padding-bottom: 5px;
+	display: block;
+	width: 100%;
+	}
+
+@media only screen and (min-width: 767px) {
+		/*.overlay-content div {
+			display: inline-block;
+			}*/
+
+	.overlay-content label,
+	.overlay-content [type=text], 
+	.overlay-content [type=email], 
+	.overlay-content [type=password], 
+	.overlay-content select {
+		display: inline;
+		float: left;
+		width: 135px;
+		padding: 6px 0 0;
+		font-size: 15px;
+		color: #464646;
+		-webkit-appearance: none;
+		}
+		
+		.overlay-content select {
+			background: #ebebeb url(/assets/images/webkit-select.png) right center no-repeat;
+			}
+		
+		.overlay-content label {
+			text-align: right;
+			padding-right: 15px;
+			font-size: 15px;
+			}
+		
+	.overlay-content [type=text], 
+	.overlay-content [type=email], 
+	.overlay-content [type=password], 
+	.overlay-content select {
+		width: 280px;
+		padding: 10px;
+		}
+}	
+/* END : Global Rules */
+
+
+
+
+/* START : Store Grid */
+.category-detail {
+	clear: both;
+	overflow: hidden;
+	margin: 20px 7px 15px 0;
+	}
+	
+	.category-detail h2 {
+		float: left;
+		display: inline;
+		max-width: 65%;
+		font-size: 15px;
+		line-height: 30px;
+		}
+	
+	.category-detail .button {
+		float: right;
+		display: inline;
+		height: 30px;
+		line-height: 26px;
+		}
+				
+@media only screen and (min-width: 767px) {
+	.category-detail {
+		margin: 0 2px 10px 0;
+		}
+	
+		.category-detail h2 {
+			font-size: 18px;
+			}
+}
+		
+@media only screen and (min-width: 979px) {
+	.category-detail {
+		margin: 0 15px 10px 0;
+		}
+}
+			
+@media only screen and (min-width: 1199px) {
+	.category-detail {
+		margin: 0 11px 10px 0;
+		}
+}
+		
+
+
+.highlighted-product img {
+	-webkit-border-radius: 6px;
+	-moz-border-radius: 6px;
+	border-radius: 6px;
+	
+	-webkit-box-shadow: 0 0 3px #666;
+	-moz-box-shadow: 0 0 3px #666;
+	box-shadow: 0 0 3px #666;
+	}
+
+.product-sort {
+	margin: 20px auto 15px;
+	text-align: center;
+	text-transform: uppercase;
+	}
+	
+@media only screen and (min-width: 767px) {
+
+	.product-sort {
+		text-align: left;
+		}
+
+}
+	
+	.product-sort a {
+		color: #898989;
+		font-size: 13px;
+		font-weight: 700;
+		padding: 0 10px;
+		letter-spacing: .1em;
+		border: 2px solid #c4c4c4;
+		border-right: 0;
+		height: 30px;
+		line-height: 26px;
+		display: inline-block;
+		margin-right: -6px;
+		
+		-webkit-border-top-left-radius: 3px;
+		-webkit-border-bottom-left-radius: 3px;
+		-moz-border-radius-topleft: 3px;
+		-moz-border-radius-bottomleft: 3px;
+		border-top-left-radius: 3px;
+		border-bottom-left-radius: 3px;
+		}
+		
+		.product-sort .product-sort-all {
+			border-left: 0;
+			border-right: 2px solid #c4c4c4;
+			
+			-webkit-border-top-right-radius: 3px;
+			-webkit-border-bottom-right-radius: 3px;
+			-moz-border-radius-topright: 3px;
+			-moz-border-radius-bottomright: 3px;
+			border-top-right-radius: 3px;
+			border-bottom-right-radius: 3px;
+			}
+			
+		.product-sort .current,
+		.product-sort .current:hover,
+		.product-sort a:hover {
+			background: #c4c4c4;
+			}
+
+
+/* END : Store Grid */
+
+
+/* START : Product Page */
+
+
+/* END : Product Page */
+
+
+/* START : Shared Elements */
+.product-filter {
+	margin: 0 auto 20px;	
+	display: table;
+	overflow: hidden;
+	}
+	
+	.filter-left,
+	.filter-right {
+		float: left;
+		display: inline;
+		border-right-width: 0;
+		background: #f3f3f3;
+		border-color: #e1e1e1;
+		
+		-webkit-border-radius: 0;
+		-moz-border-radius: 0;
+		border-radius: 0; 
+
+		-webkit-border-top-left-radius: 3px;
+		-webkit-border-bottom-left-radius: 3px;
+		-moz-border-radius-topleft: 3px;
+		-moz-border-radius-bottomleft: 3px;
+		border-top-left-radius: 3px;
+		border-bottom-left-radius: 3px;
+		}
+		
+		.filter-right {
+			border-left-width: 0;
+			border-right-width: 2px;
+			
+			-webkit-border-radius: 0;
+			-moz-border-radius: 0;
+			border-radius: 0; 
+			
+			-webkit-border-top-right-radius: 3px;
+			-webkit-border-bottom-right-radius: 3px;
+			-moz-border-radius-topright: 3px;
+			-moz-border-radius-bottomright: 3px;
+			border-top-right-radius: 3px;
+			border-bottom-right-radius: 3px;
+			}
+			
+		.filter-left.current,
+		.filter-right.current,
+		.filter-left:hover,
+		.filter-right:hover {
+			background: #e1e1e1;
+			border-color: #e1e1e1;
+			}
+
+@media only screen and (min-width: 767px) {
+	.product-filter {
+		margin: 0 auto 30px;		
+		float: left;
+		display: inline;
+		width: 100%;
+		}
+
+}
+
+
+.featured-toggle {
+	text-align: center;
+	margin: 0 auto 15px;
+	}
+	
+	.featured-toggle li {
+		list-style: none;
+		display: inline-block;
+		}
+
+@media only screen and (min-width: 767px) {
+	.featured-toggle {
+		text-align: left;
+		margin: 0 0 20px;
+		}
+
+}
+
+.music-products .product-meta { display:block !important; }
+/* END : Shared Elements */
+
+
+
+
+
+
+
+
+/* START : Some horror hacks to account for displaying non mobile sized content in an iframe which because it's scaled triggers mobile breakpoints but at desktop size. At the moment it's a little inception like until we apply a more robust method of loading multiple modal windowed content without closing and re-opening a modal window.  */
+.displaying-in-modal .overlay-content {
+	width: 300px;
+	padding: 0;
+	}
+
+.ie8 .displaying-in-modal .overlay-content {
+	width: 580px;
+	}
+	
+
+@media only screen and (min-width: 579px) {
+	.displaying-in-modal .checkout.overlay-content,
+	.displaying-in-modal .payment.overlay-content {
+		width: 580px;
+		}
+		
+	.displaying-in-modal .checkout.shipping.overlay-content {
+		width: 380px;
+		}
+		
+.displaying-in-modal.non-modal-wrap .overlay-content,
+.displaying-in-modal.non-modal-wrap .non-modal-inner,
+.displaying-in-modal.non-modal-wrap .non-modal-inner.intro {
+	width: 680px;
+	padding: 0;
+	}
+	
+.displaying-in-modal  .overlay-content.user-account {
+	/*width: 415px;*/
+	width: 578px;
+	}
+	
+	.displaying-in-modal .overlay-content.user-account.login-social {
+		width: 520px;
+		}
+	
+.displaying-in-modal.non-modal-wrap {
+	margin: 0;
+	}
+	
+#ModalContentIFrame {
+	/* This is a fix mostly for Safari because unlike all the other browsers, it won't render the iFrame at normal width */
+	width: 100% !important;
+	}
+	
+	.displaying-in-modal.non-modal-wrap .overlay-content {
+		padding: 0 50px;
+		}
+		
+.displaying-in-modal.non-modal-wrap .related {
+	/*margin-bottom: -50px;*/
+	padding-bottom: 50px;
+	overflow: hidden;
+
+	-webkit-border-bottom-right-radius: 5px;
+	-webkit-border-bottom-left-radius: 5px;
+	-moz-border-radius-bottomright: 5px;
+	-moz-border-radius-bottomleft: 5px;
+	border-bottom-right-radius: 5px;
+	border-bottom-left-radius: 5px;
+	}
+}
+/* END : Some horror hacks to account for displaying non mobile sized content in an iframe which because it's scaled triggers mobile breakpoints but at desktop size. At the moment it's a little inception like until we apply a more robust method of loading multiple modal windowed content without closing and re-opening a modal window.  */
+
+
+
+/* START : Store Down */
+/* -- Whole store is down */
+.store-down {
+	background: #fff;
+	}
+	
+	.store-down p {
+		text-align: center;
+		}
+		
+		.store-down .logo {
+			float: none;
+			margin: 0 auto 21px;
+		}
+/* -- Whole store is down */
+			
+/* -- Notification text below header if smaller issue */			
+.store-notice {
+	color: #b94a48;
+	background-color: #f2dede;
+	border: 1px solid #eed3d7;	
+	padding: 10px;
+	margin: 0 auto 21px; 
+	
+	border-radius: 5px;
+	}
+	
+	.store-notice p {
+		margin: 0;
+		text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+		}
+	
+@media only screen and (min-width: 767px) {
+.store-notice {
+	width: 768px;
+	}
+}
+
+@media only screen and (min-width: 979px) {
+.store-notice {
+	width: 940px;
+	}
+}
+
+@media only screen and (min-width: 1199px) {
+.store-notice {
+	width: 1188px;
+	}
+}
+/* -- Notification text below header if smaller issue */			
+/* END : Store Down */
+
+
+/*
+//====================================================================
+//
+// COXY'S Code
+//
+//====================================================================
+*/
+
+/*
+//====================================================================
+//
+// MOBILE / SMALL SCREEN (0px - 480px)
+//
+//====================================================================
+*/
+
+.store-footer {
+	padding: 30px;
+	margin-bottom: 30px;
+	text-align: center;
+	font-size: 13px;
+}
+
+.store-footer a { 
+	color: #464646;
+	margin-left: 5px;
+	margin-right: 5px;
+	display: block;
+}
+
+.isInAModal .store-footer a { display: inline; }
+
+
+/*
+//====================================================================
+//
+// TABLET (Bigger than 767px )
+//
+//====================================================================
+*/
+@media only screen and (min-width: 767px) {		
+	.store-footer a { 
+		display: inline;
+	}
+
+}
+
+/*
+//====================================================================
+//
+// DEFAULT (Bigger than 979px )
+//
+//====================================================================
+*/
+@media only screen and (min-width: 979px) {
+
+}
+
+
+/*
+//====================================================================
+//
+// LARGE SCREEN ( Bigger than 1199px )
+//
+//====================================================================
+*/
+@media only screen and (min-width:1199px)
+{
+	
+}
