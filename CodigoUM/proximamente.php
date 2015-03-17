@@ -10,34 +10,9 @@
     <link href="css/dropdown/themes/nvidia.com/default.advanced.css" media="screen" rel="stylesheet" type="text/css" />
     
     <style>
-         body{
-                background: #dbe3e2 url(img/bg.png) fixed repeat top center;
-                overflow-y: scroll;
-                overflow-x: hidden;
-              }
-            /* Tablas
-    -------------------------------------------------- */
-        .tableArea
-        {
-                 border: 0px solid;
-                 width: 98%;
-                 opacity: .90;
-                 filter:alpha(opacity=90); 
-                 background-color: #D7D7D7;
-                 background-repeat: no-repeat; 
-                 box-shadow: 0px 2px 10px #B5C1C5, 0 0 0 2px #EEEEEE inset; 
-        }
-
-        .tablebody
-        {
-             border: 0px solid;
-             background-color: #EEEEEE;
-             opacity: .92;
-             /*background-image: url('imagenes/internas/bt.png') ;    */
-             background-repeat: repeat; 
-             box-shadow: 0px 2px 10px #B5C1C5, 0 0 0 2px #EEEEEE inset; 
-        }
-        
+      <?php 
+            include 'css/estilo.css';
+      ?>  
     </style>
 </head>  
 <body>

@@ -12,7 +12,7 @@
    
     <style>
           <?php
-            include 'css/estilo.php';
+            include 'css/estilo.css';
           ?>
     </style>
 

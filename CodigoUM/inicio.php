@@ -12,7 +12,7 @@
     <script src="js/bootstrap.min.js"></script>
     <style>
 	   	<?php
-	      include 'css/estilo.php';
+	      include 'css/estilo.css';
 	    ?>
     </style>
     

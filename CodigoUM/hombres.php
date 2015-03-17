@@ -9,11 +9,10 @@
     <link href="css/dropdown/dropdown.css" media="screen" rel="stylesheet" type="text/css" />
     <link href="css/dropdown/themes/nvidia.com/default.advanced.css" media="screen" rel="stylesheet" type="text/css" />  
     <link rel="stylesheet" type="text/css" href="css/demo_um.css" />
-
-
+    
     <style>
       <?php
-        include 'css/estilo.php'
+        include 'css/estilo.css';
       ?>   
     </style>
   </head>
