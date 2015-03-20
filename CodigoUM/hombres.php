@@ -4,11 +4,18 @@
    <meta  nombre = "ventana"  contenido = "width = device-width, primera escala = 1,0" />
     <title> Iglesia Uni&oacute;n Misionera </title>
 
-    <link  href = "css/bootstrap/bootstrap.min.css"  rel = "stylesheet"  media = "screen" />
+    <link rel="stylesheet" href="libraries/Bootstrap/css/bootstrap.min.css">  
+    <link rel="stylesheet" href="css/menuCss.css">  
+    
     <link href="css/bootstrap/bootstrap-responsive.css" rel="stylesheet" />
     <link href="css/dropdown/dropdown.css" media="screen" rel="stylesheet" type="text/css" />
     <link href="css/dropdown/themes/nvidia.com/default.advanced.css" media="screen" rel="stylesheet" type="text/css" />  
     <link rel="stylesheet" type="text/css" href="css/demo_um.css" />
+
+    <script src="js/menuJs.js"></script>
+    <script src="js/jquery-1.11.1.min.js"></script>  
+    <script src="libraries/Bootstrap/js/bootstrap.min.js"></script>
+    <script src="js/jquery.particleground.min.js"></script>
     
     <style>
       <?php

@@ -4,15 +4,22 @@
    <meta  nombre = "ventana"  contenido = "width = device-width, primera escala = 1,0" />
     <title> Iglesia Uni&oacute;n Misionera </title>
      
-    <link rel="stylesheet" href="libraries/Bootstrap/css/bootstrap.min.css">  
-    <link rel="stylesheet" href="css/menuCss.css">  
+    <link href="libraries/Bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen">  
+    <link href="libraries/Bootstrap/css/bootstrap.css" rel="stylesheet"> 
+    <link rel="stylesheet" href="css/menuCss.css">
     <link href="css/dropdown/dropdown.css" media="screen" rel="stylesheet" type="text/css" />
-    <link href="css/dropdown/themes/nvidia.com/default.advanced.css" media="screen" rel="stylesheet" type="text/css" />
     
+    <link href="css/dropdown/themes/nvidia.com/default.advanced.css" media="screen" rel="stylesheet" type="text/css" />
+    <link href="css/style_um.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="css/demo_um.css" />
+
     <script src="js/menuJs.js"></script>
     <script src="js/jquery-1.11.1.min.js"></script>  
     <script src="libraries/Bootstrap/js/bootstrap.min.js"></script>
     <script src="js/jquery.particleground.min.js"></script>
+    <script src="http://code.jquery.com/jquery.js"></script>
+
+  
     <style>
 	   	<?php
 	      include 'css/estilo.css';
@@ -28,7 +35,7 @@
   
     <tr>
         <td>
-            <img src="img/inicio/inicioPrincipal.png"  width="100%" height="20%" />
+            <img src="img/inicio/inicioPrincipal.png"  width="100%" height="40%" />
         </td>
     </tr>
 </table>
@@ -113,7 +120,7 @@
       <hr class="featurette-divider" />
 
       <div class="page-wrapper">
-        <img class="featurette-image pull-right" src="img/inicio/mision.png" />
+        <img align="right" style="padding-top:100px" src="img/inicio/mision.png" width="40%" height="40%" />
         <p class="lead"><label style="font-size: 44px; color: white;">C </label></p>
         <p class="lead"><label style="font-size: 25px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Comuni&oacute;n </label>  </p>
         <p class="lead"><label style="font-size: 44px; color: white;">A </label></p>
@@ -128,9 +135,9 @@
 
       <hr class="featurette-divider" />
 
-      <div class="page-wrapper ">
-        <img class="featurette-image pull-left" src="img/inicio/vision.png" />
-        <p class="lead"><label >Ser una comunidad fundamentada en la biblia, que tiene el retos de alcanzar y entrenar a sus miembros para vivir vidas santas y cumplir el mandato de " IR Y HACER DISC&Iacute;PULOS" para ganar nuestra ciudad y nuestro pa&iacute;s para Cristo.</label></p>
+      <div class="page-wrapper " aling="center">
+        <img  src="img/inicio/vision.png" width="40%" height="40%" />
+        <p class="lead"><label style="font-size: 25px;">Ser una comunidad fundamentada en la biblia, que tiene el retos de alcanzar y entrenar a sus miembros para vivir vidas santas y cumplir el mandato de " IR Y HACER DISC&Iacute;PULOS" para ganar nuestra ciudad y nuestro pa&iacute;s para Cristo.</label></p>
         <br />
         <br />
         <br />
@@ -147,35 +154,31 @@
 
  </tr>
 </table>
-<table aling="center"  width="100%" class="tableArea" >
+  <table aling="center"  width="100%" class="tableArea" >
                 <tr>
                     <td colspan="2">
                         <br/>
-                        <img  src="img/redesSociales/redes_sociales.png" /> 
+                        <img  src="img/redesSociales/redesSociales.png" width="100%" height="30%"/> 
                     </td>
                 </tr>
                  <tr>
-                 <td width="12%" >
-                 </td>
+               
                     <td >
-                                <div class="row-fluid">
-                                <div class="span4">
-                                <a href="https://www.facebook.com/iglesiaunion.misionera"><img class="img-circle" src="img/redesSociales/facebook.png" /> </a>
-                                <!--<h2>Heading</h2> !-->
-           
-                                </div>
-                                <div class="span4">
-                                   <a href="https://twitter.com/unionmisionera"> <img class="img-circle" src="img/redesSociales/twitter.png" /> </a>
-                                 <!-- <h2>Heading</h2> -->
-                                 
-                                </div><!-- /.span4 -->
-                                
-                                <div class="span4">
-                                  <img class="img-circle" src="img/redesSociales/youtube.png" />
-                                 
-                                  <!-- <p><a class="btn btn-info" href="#">View details &raquo;</a></p> -->
-                                </div><!-- /.span4 -->
-                              </div>
+                            <div class="row-fluid">
+                                <div class="span4" align="center">
+                                  <a href="https://www.facebook.com/iglesiaunion.misionera">
+                                    <img class="img-circle" src="img/redesSociales/facebook.png" 
+                                     width="10%" height="10%" /> 
+                                  </a>
+                    
+                                  <a href="https://twitter.com/unionmisionera"> 
+                                    <img class="img-circle" src="img/redesSociales/twitter.png" 
+                                    width="10%" height="10%"/> 
+                                  </a>
+                                    <img class="img-circle" src="img/redesSociales/youtube.png" 
+                                    width="10%" height="10%"/>
+                               </div><!-- /.span4 -->
+                            </div>
                               <br />
                               <br />
                               <br />
@@ -189,8 +192,10 @@
                                             
                     </td>
                 </tr>
-  </table>	
-  </body>
+  </table>  
+
+
+</body>
 </html>
 
       
