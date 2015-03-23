@@ -1,122 +1,116 @@
 <!DOCTYPE html>
-<html>
-  <head>
-   <meta  nombre = "ventana"  contenido = "width = device-width, primera escala = 1,0" />
-    <title> Iglesia Uni&oacute;n Misionera </title>
-     <link href="css/style_um.css" rel="stylesheet" type="text/css" />
-     <link href="css/bootstrap.css" rel="stylesheet" />
-     <link href="css/bootstrap-responsive.css" rel="stylesheet" />
-     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
-     <script src="jquery.flexslider-min.js"></script>
-     <link rel="stylesheet" href="flexslider.css" type="text/css" media="screen" />
-	 <link rel="stylesheet" href="demo-stuff/demo.css" type="text/css" media="screen" />
+<html lang="en">
+    <head>
+        <?php include ('templates/Head.php');?>
+    </head>
+    <body>
+        <!-- Navbar
+        ============= -->
+        <?php include ('templates/Menu.php');?>
 
-
-    <script>
-              (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-              (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-              m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-              })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-              ga('create', 'UA-45272715-1', 'host22.com');
-              ga('send', 'pageview');
-    </script>
-     
-     <style>
-         body{
-	
-                background: #dbe3e2 url(images/bg.png) fixed repeat top center;
-                overflow-y: scroll;
-                overflow-x: hidden;
-                    
-              }
-            /* Tablas
-    -------------------------------------------------- */
-        .tableArea
-        {
-                 border: 0px solid;
-                 width: 98%;
-                 opacity: .90;
-                 filter:alpha(opacity=90); 
-                 background-color: #D7D7D7;
-                 background-repeat: no-repeat; 
-                 box-shadow: 0px 2px 10px #B5C1C5, 0 0 0 2px #EEEEEE inset; 
-        }
-
-        .tablebody
-        {
-             border: 0px solid;
-             background-color: #EEEEEE;
-             opacity: .92;
-             /*background-image: url('imagenes/internas/bt.png') ;    */
-             background-repeat: repeat; 
-             box-shadow: 0px 2px 10px #B5C1C5, 0 0 0 2px #EEEEEE inset; 
-        }
-        
-    </style>
-    
-    <script type="text/javascript">
-		$(window).load(function() {
-			$('.flexslider').flexslider();
-		});
-	</script>
-    
-</head>  
-<body>
-    <table align="center"  width="100%" height="50%" border="0" class="tablebody">
-    <tr>
-        <td>
-            <br />
-        </td>
-    </tr>
-        <tr>
-            <td  width="20%">  
-            
-            </td>
-            <td  width="60%">
-            
-                    <a href="noticias.php"> <img  src="images/BenvenidoUM.png" />  </a>   
-                       
-            </td>
-            <td  width="20%"> </td>
-        </tr>
-        
-    </table>
-    <table align="center"  border="1" >
-        <tr>
-            <td >
-                <br />
-                <div id="container">
-                  <div class="flexslider">
-    	           <ul class="slides">
-            	    	  <li>
-                	    		<img src="images/layout_um/1185757_10151874806697733_797975608_n.jpg" />
-                	    		<p class="flex-caption">Captions and cupcakes. Winning combination.</p>
-            	    	   </li>
-            	    	   <li>
-                	    		<a href="http://flex.madebymufffin.com"><img src="images/layout_um/1233349_597753703596980_832492354_n_editado.jpg" /></a>
-                	    		<p class="flex-caption">This image is wrapped in a link!</p>
-            	    	   </li>
-            	    	   <li>
-            	    		     <img src="demo-stuff/inacup_donut.jpg" />
-            	    	   </li>
-            	    	   <li>
-            	    		<img src="demo-stuff/inacup_vanilla.jpg" />
-            	    	   </li>
-    	            </ul>
-                  </div>
+         <!-- Main body
+        ================== -->
+        <div class="container" width="100%">
+            <img src="img/inicio/principal.png"  width="100%" height="40%" />
+        </div>
+        <div class="wrapper"> 
+            <!-- Historia
+            ============= -->
+            <div class="container marco ">
+                <div width="50%" class="historia ajuste-marco">
+                    <p>
+                        La Iglesia Uni&oacute;n Misionera tiene historia y trayectoria en la vida cristiana evang&eacute;lica de nuestro pa&iacute;s. Desde sus inicios (1896) hasta el d&iacute;a de hoy, ha basado su fe en Jesucristo y ha respondido al mandato de ir y hacer disc&iacute;pulos. &nbsp;
+                        Rechazamos todo esp&iacute;ritu de religiosidad y m&aacute;s bien ense&ntilde;amos a vivir el estilo de vida de Jes&uacute;s, din&aacute;mico en cada espacio en que nos desenvolvemos. &nbsp;
+                        Bienvenido a nuestra casa UM para tomar herramientas espirituales y ser sal y luz en Guayaquil y Ecuador.
+                        <br/>
+                        <br/><b>Dr. David Aguirre &nbsp;&nbsp;&nbsp;</b>
+                        <br/><b>PASTOR PRINCIPAL&nbsp;&nbsp;&nbsp; </b>
+                    </p>
                 </div>
-        
-             </td>
-            
-            <!-- <td aling="rigth" width="30%">
-                 <h2>Desarrollado por: <a> Josselhin Moreira.</a></h2>
-            
-            </td>
-            -->
-        </tr>
-    </table>
-</body> 
-</html>  
+            </div>
 
-  
-    
+            <br><hr class="featurette-divider" /><br>
+
+            <!-- Carousel
+            ============= -->
+            <div class="container marco">
+                <div >
+                    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                        <!-- Indicators -->
+                        <ol class="carousel-indicators">
+                            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                            <li data-target="#myCarousel" data-slide-to="1"></li>
+                            <li data-target="#myCarousel" data-slide-to="2"></li>
+                            <li data-target="#myCarousel" data-slide-to="3"></li>
+                        </ol>
+
+                        <!-- Wrapper for slides -->
+                        <div class="carousel-inner" role="listbox">
+                            <div class="item active">
+                              <img src="img/inicio/inicio1.jpg" alt="Chania">
+                            </div>
+
+                            <div class="item">
+                              <img src="img/inicio/inicio2.jpg" alt="Jose">
+                            </div>
+
+                            <div class="item">
+                              <img src="img/inicio/inicio3.jpg" alt="Flower">
+                            </div>
+
+                            <div class="item">
+                              <img src="img/inicio/inicio2.jpg" alt="Flower">
+                            </div>
+                        </div>
+
+                        <!-- Left and right controls -->
+                        <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+                            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+                            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <br><hr class="featurette-divider" /><br>
+
+            <div class="container marco">
+                <div class="col-xs-12 col-sm-6 col-md-6  ajuste-marco" style="text-align:center " width="100%">
+                    <img src="img/inicio/mision.png" width="80%" height="80%" />
+                </div>
+
+                <div class="col-xs-offset-2 col-xs-8 col-sm-3 col-md-3 mision centrar">
+                    <br>
+                    <p class="inicial"><label>C</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Comuni&oacute;n</p><br>
+                    <p class="inicial"><label>A</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Adoraci&oacute;n</p><br>
+                    <p class="inicial"><label>S</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Servicio</p><br>
+                    <p class="inicial"><label>E</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Evangelismo</p><br>
+                    <p class="inicial"><label>D</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Discipulado</p>
+                </div>
+            </div>
+
+             <br><hr class="featurette-divider" /><br>
+
+            <div class="container marco">
+
+                <div class="col-xs-offset-1 col-xs-10 col-sm-5 col-md-4  mision centrar historia ajuste-marco" style="text-align:center ">
+                    <br><br>
+                    <p>
+                        Ser una comunidad fundamentada en la biblia, que tiene el retos de alcanzar y entrenar a sus miembros 
+                        para vivir vidas santas y cumplir el mandato de " IR Y HACER DISC&Iacute;PULOS" para ganar nuestra ciudad 
+                        y nuestro pa&iacute;s para Cristo.</p><br>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-6  ajuste-marco" style="text-align:center " width="100%">
+                    <img src="img/inicio/mision.png" width="80%" height="80%" />
+                </div>
+            </div> 
+        </div>
+        <!-- Foooter
+        ================== -->
+        <?php include ('templates/Footer.php');?>
+    </body>
+</html>

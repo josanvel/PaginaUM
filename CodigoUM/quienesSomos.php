@@ -9,7 +9,7 @@
         <?php include ('templates/Menu.php');?>
 
         <div class="container" width="100%">
-            <img  src="img/proximamente/proximamente.png" width="100%"  height="40%" /> 
+            <img  src="img/noticias/noticias.png" width="100%"  height="40%" /> 
         </div>
 
         <!-- Main body
@@ -23,7 +23,3 @@
         <?php include ('templates/Footer.php');?>
     </body>
 </html>
- 
-
-  
-    
