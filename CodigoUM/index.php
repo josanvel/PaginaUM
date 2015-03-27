@@ -80,15 +80,14 @@
 
             <div class="container marco">
                 <div class="col-xs-12 col-sm-6 col-md-6  ajuste-marco" style="text-align:center " width="100%">
-                    <img src="img/inicio/mision.png" width="80%" height="80%" />
+                    <img src="img/inicio/vision.png" width="100%" height="100%" />
                 </div>
 
                 <div class="col-xs-offset-2 col-xs-8 col-sm-3 col-md-3 mision centrar">
-                    <br>
-                    <p class="inicial"><label>C</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Comuni&oacute;n</p><br>
-                    <p class="inicial"><label>A</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Adoraci&oacute;n</p><br>
-                    <p class="inicial"><label>S</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Servicio</p><br>
-                    <p class="inicial"><label>E</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Evangelismo</p><br>
+                    <p class="inicial" style="padding-bottom:14px;"><label>C</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Comuni&oacute;n</p>
+                    <p class="inicial" style="padding-bottom:14px;"><label>A</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Adoraci&oacute;n</p>
+                    <p class="inicial" style="padding-bottom:14px;"><label>S</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Servicio</p>
+                    <p class="inicial" style="padding-bottom:14px;"><label>E</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Evangelismo</p>
                     <p class="inicial"><label>D</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Discipulado</p>
                 </div>
             </div>
@@ -97,15 +96,14 @@
 
             <div class="container marco">
 
-                <div class="col-xs-offset-1 col-xs-10 col-sm-5 col-md-4  mision centrar historia ajuste-marco" style="text-align:center ">
-                    <br><br>
-                    <p>
+                <div class="col-xs-6 col-sm-6 col-md-6  mision centrar historia ajuste-marco" style="text-align:center ">
+                       <p><br>
                         Ser una comunidad fundamentada en la biblia, que tiene el retos de alcanzar y entrenar a sus miembros 
                         para vivir vidas santas y cumplir el mandato de " IR Y HACER DISC&Iacute;PULOS" para ganar nuestra ciudad 
-                        y nuestro pa&iacute;s para Cristo.</p><br>
+                        y nuestro pa&iacute;s para Cristo.</p><br><br><br>
                 </div>
-                <div class="col-xs-12 col-sm-6 col-md-6  ajuste-marco" style="text-align:center " width="100%">
-                    <img src="img/inicio/mision.png" width="80%" height="80%" />
+                <div class="col-xs-6 col-sm-6 col-md-6  ajuste-marco" style="text-align:center " width="100%">
+                    <img src="img/inicio/mision.png" width="100%" height="100%" />
                 </div>
             </div> 
         </div>

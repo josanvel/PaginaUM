@@ -16,22 +16,21 @@
         ================== -->
         <div class="wrapper">  
 
-        	   <!-- Main body
+               <!-- Main body
         ================== -->
         
-            <div class="container-fluid marco">
-            	<br>
+            <div class="container marco">
+                
                 <div class="col-xs-12 col-sm-6 col-md-6 ajuste-marco" style="text-align:center" width="100%">
-                    <img src="img/mujeresProposito/mujeres.jpg" width="80%" height="90%" />
+                        <img src="img/mujeresProposito/mujeres.jpg" width="100%" height="100%" />
                 </div>
 
                 <div class="col-xs-12 col-sm-6 col-md-6 mision centrar historia ajuste-marco">
-                    <br>
-                    	<p>
-                      		Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. 
-                       		Lorem Ipsum ha sido el texto de relleno est&aacute;ndar de las industrias desde el año 1500, cuando un impresor (N. del T.
-                       		persona que se dedica a la imprenta) desconocido us&oacte; una galería de textos y los mezcló de tal manera que logr&oacute; hacer un libro de textos especimen.
-                		</p>
+                        <p>
+                            Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. 
+                            Lorem Ipsum ha sido el texto de relleno est&aacute;ndar de las industrias desde el año 1500, cuando un impresor (N. del T.
+                            persona que se dedica a la imprenta) desconocido us&oacte; una galería de textos y los mezcló de tal manera que logr&oacute; 
+                        </p>
                 </div>
             </div>
 
@@ -40,8 +39,7 @@
             <div class="container-fluid marco">
 
                 <div class="col-xs-12 col-sm-6 col-md-6  mision centrar historia ajuste-marco" style="text-align:center">
-                    <br>
-                    <p>
+                      <p>
                        Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. 
                        Lorem Ipsum ha sido el texto de relleno est&aacute;ndar de las industrias desde el año 1500, cuando un impresor (N. del T.
                        persona que se dedica a la imprenta) desconocido us&oacte; una galería de textos y los mezcló de tal manera que logr&oacute; hacer un libro de textos especimen.
@@ -49,13 +47,13 @@
                 </div>
                 
                 <div class="col-xs-12 col-sm-6 col-md-6  ajuste-marco" style="text-align:center " width="100%">
-                    <img src="img/mujeresProposito/mujeres3.jpg" width="80%" height="90%" />
+                    <img src="img/mujeresProposito/mujeres3.jpg" width="100%" height="100%" />
                 </div>
             </div> 
 
            <br><hr class="featurette-divider" /><br>
 
-        	<div class="container-fluid marco">
+            <div class="container-fluid marco">
                 <div>
                     <div id="myCarousel" class="carousel slide" data-ride="carousel">
                         <!-- Indicators -->
@@ -92,16 +90,15 @@
 
             <div class="container-fluid marco">
                 <div class="col-xs-12 col-sm-6 col-md-6 ajuste-marco" style="text-align:center" width="100%">
-                    <img src="img/mujeresProposito/horaTE.jpg" width="80%" height="90%" />
+                    <img src="img/mujeresProposito/horaTE.jpg" width="100%" height="100%" />
                 </div>
                 
                 <div class="col-xs-12 col-sm-6 col-md-6 mision centrar historia ajuste-marco">
-                    <br>
-                    	<p>
-                    	Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. 
+                      <p>
+                        Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. 
                        Lorem Ipsum ha sido el texto de relleno est&aacute;ndar de las industrias desde el año 1500, cuando un impresor (N. del T.
                        persona que se dedica a la imprenta) desconocido us&oacte; una galería de textos y los mezcló de tal manera que logr&oacute; hacer un libro de textos especimen.         
-                       <br> </p>
+                       </p>
                 </div>
             </div>
 
