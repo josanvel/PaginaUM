@@ -25,8 +25,8 @@
                         <ul  class="dropdown-menu" style="padding-left:20px">
                                 <li> <a href="mujeres.php">Mujeres con Prop&oacute;sito</a></li>
                                 <li> <a href="hombres.php">Hombres con Prop&oacute;sito</a></li>
-                                <li> <a href="proximamente.php">Parejas</a></li>
-                                <li> <a href="proximamente.php">J&oacute;venes y Adolescentes al RESK-T</a></li>
+                                <li> <a href="jovenesAdolescentes.php">J&oacute;venes y Adolescentes al RESK-T</a></li>
+                                <!--<li> <a href="proximamente.php">Parejas</a></li>
                                 <li> <a href="proximamente.php">Grupos de Conexi&oacute;n</a></li>
                                 <li> <a href="proximamente.php">D&eacute;boras</a></li>
                                 <li> <a href="proximamente.php">Exploradores</a></li>
@@ -38,10 +38,10 @@
                                             <li> <a href="proximamente.php">Sala Cuna</a></li>
                                             <li> <a href="proximamente.php">Fundaci&oacute;n Hombre del ma&ntilde;ana</a></li>
                                     </ul>
-                                </li>
+                                </li>-->
                         </ul>
                     </li>
-                    
+                    <!--
                     <li class="menu-item dropdown dropdown-submenu">
                         <a class="dropdown-toggle" data-toggle="dropdown" href="./">Redes de Servicio</a>
                         <ul  class="dropdown-menu" style="padding-left:20px">
@@ -98,7 +98,7 @@
                                 <li> <a href="proximamente.php">Oraci&oacute;n</a></li>
                                 <li> <a href="proximamente.php">Profec&iacute;a</a></li>
                         </ul>
-                    </li>
+                    </li>-->
 
                 </ul>
             </li>

@@ -9,10 +9,10 @@
             <div class="content">
               <p>
                 GUAYAQUIL - ECUADOR<br />
-                Rumichaca y Capitan Najera<br />
-                Telefono: +593 000 000 00 00<br />
-                Fax: +0593 000 000 00 00<br />
-                Email: <a href="#">admin@mysite.com</a>
+                Capitan Najera # 900 y Rumichaca<br />
+                Telefono: +593 241 17 69<br />
+                Telefono: +593 241 17 69<br />
+                Email: <a href="#">admin@um.org</a>
               </p>
             </div>
           </div>
@@ -28,6 +28,8 @@
                   <li><a href="https://www.facebook.com/iglesiaunion.misionera" id="facebook"><i class="fa fa-facebook"></i></a>
                   </li>
                   <li><a href="#" id="youtube"><i class="fa fa-youtube"></i></a>
+                  </li>
+                  <li><a href="#" id="instagram"><i class="fa fa-instagram"></i></a>
                   </li>
               </ul>
               </a>
